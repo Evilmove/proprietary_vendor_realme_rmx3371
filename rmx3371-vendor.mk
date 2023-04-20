@@ -119,6 +119,46 @@ PRODUCT_COPY_FILES += \
     vendor/realme/rmx3371/proprietary/odm/firmware/500ms_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/500ms_RTP.bin \
     vendor/realme/rmx3371/proprietary/odm/firmware/60ms_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/60ms_RTP.bin \
     vendor/realme/rmx3371/proprietary/odm/firmware/80ms_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/80ms_RTP.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/AT500ms_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/AT500ms_RTP.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/Chase_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/Chase_RTP.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/Climber_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/Climber_RTP.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/In_game_alarm_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/In_game_alarm_RTP.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/In_game_ringtone_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/In_game_ringtone_RTP.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/In_game_sms_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/In_game_sms_RTP.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/Rock_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/Rock_RTP.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/VZW_Alrwave_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/VZW_Alrwave_RTP.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/Version_Alert_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/Version_Alert_RTP.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/Wake_up_samurai_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/Wake_up_samurai_RTP.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/agingtest_160hz_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/agingtest_160hz_RTP.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/agingtest_162hz_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/agingtest_162hz_RTP.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/agingtest_164hz_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/agingtest_164hz_RTP.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/agingtest_166hz_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/agingtest_166hz_RTP.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/agingtest_168hz_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/agingtest_168hz_RTP.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/agingtest_170hz_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/agingtest_170hz_RTP.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/agingtest_172hz_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/agingtest_172hz_RTP.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/agingtest_174hz_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/agingtest_174hz_RTP.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/agingtest_176hz_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/agingtest_176hz_RTP.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/agingtest_178hz_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/agingtest_178hz_RTP.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/agingtest_180hz_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/agingtest_180hz_RTP.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/alarm_Alarm_clock_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/alarm_Alarm_clock_RTP.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/alarm_Beep_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/alarm_Beep_RTP.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/alarm_Breeze_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/alarm_Breeze_RTP.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/alarm_Dawn_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/alarm_Dawn_RTP.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/alarm_Dream_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/alarm_Dream_RTP.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/alarm_Fluttering_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/alarm_Fluttering_RTP.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/alarm_Flyer_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/alarm_Flyer_RTP.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/alarm_Interesting_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/alarm_Interesting_RTP.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/alarm_Leisurely_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/alarm_Leisurely_RTP.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/alarm_Memory_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/alarm_Memory_RTP.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/alarm_Relieved_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/alarm_Relieved_RTP.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/alarm_Ripple_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/alarm_Ripple_RTP.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/alarm_Slowly_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/alarm_Slowly_RTP.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/alarm_Stars_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/alarm_Stars_RTP.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/alarm_Surging_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/alarm_Surging_RTP.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/alarm_The_wind_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/alarm_The_wind_RTP.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/alarm_Walking_in_the_rain_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/alarm_Walking_in_the_rain_RTP.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/alarm_spring_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/alarm_spring_RTP.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/alarm_tactfully_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/alarm_tactfully_RTP.bin \
     vendor/realme/rmx3371/proprietary/odm/firmware/aw8697_About_School_RTP_17.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_About_School_RTP_17.bin \
     vendor/realme/rmx3371/proprietary/odm/firmware/aw8697_About_School_RTP_17_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_About_School_RTP_17_165Hz.bin \
     vendor/realme/rmx3371/proprietary/odm/firmware/aw8697_About_School_RTP_17_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_About_School_RTP_17_175Hz.bin \
@@ -645,7 +685,11 @@ PRODUCT_COPY_FILES += \
     vendor/realme/rmx3371/proprietary/odm/firmware/aw8697_fingerprint_effect8_RTP_117_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect8_RTP_117_234Hz.bin \
     vendor/realme/rmx3371/proprietary/odm/firmware/aw8697_fingerprint_effect8_RTP_117_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect8_RTP_117_237Hz.bin \
     vendor/realme/rmx3371/proprietary/odm/firmware/aw8697_haptic.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_haptic.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/aw8697_haptic_166.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_haptic_166.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/aw8697_haptic_168.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_haptic_168.bin \
     vendor/realme/rmx3371/proprietary/odm/firmware/aw8697_haptic_170.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_haptic_170.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/aw8697_haptic_172.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_haptic_172.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/aw8697_haptic_174.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_haptic_174.bin \
     vendor/realme/rmx3371/proprietary/odm/firmware/aw8697_haptic_235.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_haptic_235.bin \
     vendor/realme/rmx3371/proprietary/odm/firmware/aw8697_haptic_235_19161.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_haptic_235_19161.bin \
     vendor/realme/rmx3371/proprietary/odm/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_160Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_160Hz.bin \
@@ -811,6 +855,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/rmx3371/proprietary/odm/firmware/aw8697_reserved_109.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_reserved_109.bin \
     vendor/realme/rmx3371/proprietary/odm/firmware/aw8697_rtp.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_rtp.bin \
     vendor/realme/rmx3371/proprietary/odm/firmware/aw8697_rtp_lighthouse.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_rtp_lighthouse.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/aw8697_rtp_silk.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_rtp_silk.bin \
     vendor/realme/rmx3371/proprietary/odm/firmware/aw8697_short_channel_RTP_45.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_short_channel_RTP_45.bin \
     vendor/realme/rmx3371/proprietary/odm/firmware/aw8697_short_channel_RTP_45_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_short_channel_RTP_45_165Hz.bin \
     vendor/realme/rmx3371/proprietary/odm/firmware/aw8697_short_channel_RTP_45_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_short_channel_RTP_45_175Hz.bin \
@@ -957,6 +1002,67 @@ PRODUCT_COPY_FILES += \
     vendor/realme/rmx3371/proprietary/odm/firmware/aw8697_weather_wind_RTP_oplusos7_142_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_wind_RTP_oplusos7_142_230Hz.bin \
     vendor/realme/rmx3371/proprietary/odm/firmware/aw8697_weather_wind_RTP_oplusos7_142_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_wind_RTP_oplusos7_142_234Hz.bin \
     vendor/realme/rmx3371/proprietary/odm/firmware/aw8697_weather_wind_RTP_oplusos7_142_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_wind_RTP_oplusos7_142_237Hz.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/barca_alarm_ring_RTP_120.bin:$(TARGET_COPY_OUT_ODM)/firmware/barca_alarm_ring_RTP_120.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/barca_incoming_ring_RTP_121.bin:$(TARGET_COPY_OUT_ODM)/firmware/barca_incoming_ring_RTP_121.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/barca_notice_ring_RTP_122.bin:$(TARGET_COPY_OUT_ODM)/firmware/barca_notice_ring_RTP_122.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/notif_Allay_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/notif_Allay_RTP.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/notif_Allusion_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/notif_Allusion_RTP.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/notif_Amiable_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/notif_Amiable_RTP.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/notif_Blare_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/notif_Blare_RTP.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/notif_Blissful_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/notif_Blissful_RTP.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/notif_Brisk_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/notif_Brisk_RTP.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/notif_Bubble_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/notif_Bubble_RTP.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/notif_Cheerful_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/notif_Cheerful_RTP.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/notif_Clear_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/notif_Clear_RTP.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/notif_Comely_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/notif_Comely_RTP.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/notif_Cozy_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/notif_Cozy_RTP.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/notif_Ding_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/notif_Ding_RTP.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/notif_Effervesce_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/notif_Effervesce_RTP.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/notif_Elegant_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/notif_Elegant_RTP.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/notif_Free_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/notif_Free_RTP.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/notif_Hallucination_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/notif_Hallucination_RTP.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/notif_Inbound_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/notif_Inbound_RTP.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/notif_Light_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/notif_Light_RTP.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/notif_Meet_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/notif_Meet_RTP.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/notif_Naivety_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/notif_Naivety_RTP.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/notif_Quickly_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/notif_Quickly_RTP.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/notif_Rhythm_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/notif_Rhythm_RTP.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/notif_Surprise_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/notif_Surprise_RTP.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/notif_Twinkle_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/notif_Twinkle_RTP.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/ring_Amenity_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ring_Amenity_RTP.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/ring_Bounce_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ring_Bounce_RTP.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/ring_Calm_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ring_Calm_RTP.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/ring_Lazy_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ring_Lazy_RTP.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/ring_Mystical_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ring_Mystical_RTP.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/ring_Whirl_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ring_Whirl_RTP.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/ringtone_Alacrity_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Alacrity_RTP.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/ringtone_Blues_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Blues_RTP.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/ringtone_Cloud_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Cloud_RTP.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/ringtone_Cyclotron_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Cyclotron_RTP.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/ringtone_Distinct_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Distinct_RTP.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/ringtone_Dynamic_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Dynamic_RTP.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/ringtone_Echo_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Echo_RTP.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/ringtone_Expect_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Expect_RTP.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/ringtone_Fanatical_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Fanatical_RTP.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/ringtone_Funky_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Funky_RTP.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/ringtone_Guitar_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Guitar_RTP.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/ringtone_Harping_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Harping_RTP.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/ringtone_Highlight_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Highlight_RTP.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/ringtone_Idyl_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Idyl_RTP.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/ringtone_Innocence_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Innocence_RTP.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/ringtone_Jazz_life_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Jazz_life_RTP.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/ringtone_Journey_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Journey_RTP.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/ringtone_Joyous_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Joyous_RTP.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/ringtone_Marimba_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Marimba_RTP.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/ringtone_Old_telephone_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Old_telephone_RTP.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/ringtone_OnePlus_tune_rhythm_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_OnePlus_tune_rhythm_RTP.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/ringtone_Oneplus_tune_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Oneplus_tune_RTP.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/ringtone_Optimistic_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Optimistic_RTP.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/ringtone_Piano_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Piano_RTP.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/ringtone_Rhythm_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Rhythm_RTP.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/ringtone_Sun_glittering_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Sun_glittering_RTP.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/shuntai24k_rtp.bin:$(TARGET_COPY_OUT_ODM)/firmware/shuntai24k_rtp.bin \
+    vendor/realme/rmx3371/proprietary/odm/firmware/t-jingle_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/t-jingle_RTP.bin \
     vendor/realme/rmx3371/proprietary/odm/firmware/fastchg/21733/charging_thermal_config_default.txt:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/21733/charging_thermal_config_default.txt \
     vendor/realme/rmx3371/proprietary/odm/firmware/fastchg/21733/oplus_vooc_fw_rk826.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/21733/oplus_vooc_fw_rk826.bin \
     vendor/realme/rmx3371/proprietary/odm/firmware/fastchg/charging_thermal_config_default.txt:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/charging_thermal_config_default.txt \
