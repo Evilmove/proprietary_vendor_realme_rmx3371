@@ -30,6 +30,13 @@
 },
 
 {
+  "VendorTag": "com.oplus.supernight.offline.support",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "1"
+},
+
+{
   "VendorTag": "com.oplus.sat.hdr.zoom.ratio.range",
   "Type": "Float",
   "Count": "2",
@@ -2160,5 +2167,13 @@
   "Type": "Int32",
   "Count": "1",
   "Value": "1"
+},
+
+{
+  "VendorTag": "com.oplus.aps.params.turboraw.shutterwait",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "1000"
 }
+
 ]
