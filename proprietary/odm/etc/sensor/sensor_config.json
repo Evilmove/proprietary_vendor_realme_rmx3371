@@ -1,5 +1,5 @@
 {
-	"21732": {
+	"21733": {
 		"platform_config": {
 			"sensor_arch": "qcom_sensor_see"
 		},
@@ -128,7 +128,7 @@
 			},
 			"qti.sensor.sar": {
 				"type":33171025,
-				"support":"false",
+				"support":"true",
 				"module":"sx933x",
 				"sx933x":{
 					"mode":"triple_channel"
