@@ -1068,6 +1068,8 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX3371/proprietary/odm/firmware/ringtone_Sun_glittering_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Sun_glittering_RTP.bin \
     vendor/realme/RMX3371/proprietary/odm/firmware/shuntai24k_rtp.bin:$(TARGET_COPY_OUT_ODM)/firmware/shuntai24k_rtp.bin \
     vendor/realme/RMX3371/proprietary/odm/firmware/t-jingle_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/t-jingle_RTP.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/wifi/regdb.bin:$(TARGET_COPY_OUT_ODM)/etc/wifi/regdb.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/wifi/regdb_version:$(TARGET_COPY_OUT_ODM)/etc/wifi/regdb_version \
     vendor/realme/RMX3371/proprietary/odm/firmware/tfa98xx.cnt:$(TARGET_COPY_OUT_ODM)/firmware/tfa98xx.cnt \
     vendor/realme/RMX3371/proprietary/odm/firmware/tp/21623/FW_FT3658U_SAMSUNG.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/21623/FW_FT3658U_SAMSUNG.img \
     vendor/realme/RMX3371/proprietary/odm/firmware/tp/21623/FW_FT3658U_SAMSUNG_FAE.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/21623/FW_FT3658U_SAMSUNG_FAE.img \
