@@ -13,9 +13,8 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX3371/proprietary/odm/bin/hw/vendor.qti.esepowermanager@1.1-service:$(TARGET_COPY_OUT_ODM)/bin/hw/vendor.qti.esepowermanager@1.1-service \
     vendor/realme/RMX3371/proprietary/odm/bin/hw/vendor.qti.secure_element@1.2-service:$(TARGET_COPY_OUT_ODM)/bin/hw/vendor.qti.secure_element@1.2-service \
     vendor/realme/RMX3371/proprietary/odm/bin/init.oplus.fingerprints.sh:$(TARGET_COPY_OUT_ODM)/bin/init.oplus.fingerprints.sh \
-    vendor/realme/RMX3371/proprietary/odm/bin/vl53l1_daemon_main:$(TARGET_COPY_OUT_ODM)/bin/vl53l1_daemon_main \
     vendor/realme/RMX3371/proprietary/odm/bin/oplus_sensor_fb:$(TARGET_COPY_OUT_ODM)/bin/oplus_sensor_fb \
-    vendor/realme/RMX3371/proprietary/odm/bin/sensor_recover.sh:$(TARGET_COPY_OUT_ODM)/bin/sensor_recover.sh \
+    vendor/realme/RMX3371/proprietary/odm/bin/vl53l1_daemon_main:$(TARGET_COPY_OUT_ODM)/bin/vl53l1_daemon_main \
     vendor/realme/RMX3371/proprietary/odm/etc/acdbdata/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/Bluetooth_cal.acdb \
     vendor/realme/RMX3371/proprietary/odm/etc/acdbdata/General_cal.acdb:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/General_cal.acdb \
     vendor/realme/RMX3371/proprietary/odm/etc/acdbdata/Global_cal.acdb:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/Global_cal.acdb \
@@ -32,6 +31,17 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX3371/proprietary/odm/etc/acdbdata/Speaker_cal.acdb:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/Speaker_cal.acdb \
     vendor/realme/RMX3371/proprietary/odm/etc/camera/CameraHWConfiguration.config:$(TARGET_COPY_OUT_ODM)/etc/camera/CameraHWConfiguration.config \
     vendor/realme/RMX3371/proprietary/odm/etc/camera/M_Attribute_AG_BMW_1.1.0.model.hardcode:$(TARGET_COPY_OUT_ODM)/etc/camera/M_Attribute_AG_BMW_1.1.0.model.hardcode \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/aicolor/duallut_background.bmp:$(TARGET_COPY_OUT_ODM)/etc/camera/aicolor/duallut_background.bmp \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/aicolor/duallut_portrait.bmp:$(TARGET_COPY_OUT_ODM)/etc/camera/aicolor/duallut_portrait.bmp \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/anc/fusion_model:$(TARGET_COPY_OUT_ODM)/etc/camera/anc/fusion_model \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/anc/fusion_model_post:$(TARGET_COPY_OUT_ODM)/etc/camera/anc/fusion_model_post \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/anc/merged_model:$(TARGET_COPY_OUT_ODM)/etc/camera/anc/merged_model \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/anc/merged_model_post:$(TARGET_COPY_OUT_ODM)/etc/camera/anc/merged_model_post \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/anc/video_retention_model:$(TARGET_COPY_OUT_ODM)/etc/camera/anc/video_retention_model \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/anc/video_retention_model_post:$(TARGET_COPY_OUT_ODM)/etc/camera/anc/video_retention_model_post \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/anc/videolut_background.png:$(TARGET_COPY_OUT_ODM)/etc/camera/anc/videolut_background.png \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/anc/videolut_portrait.png:$(TARGET_COPY_OUT_ODM)/etc/camera/anc/videolut_portrait.png \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/anc/videolut_portrait_front.png:$(TARGET_COPY_OUT_ODM)/etc/camera/anc/videolut_portrait_front.png \
     vendor/realme/RMX3371/proprietary/odm/etc/camera/anc_cl_kernel.cache:$(TARGET_COPY_OUT_ODM)/etc/camera/anc_cl_kernel.cache \
     vendor/realme/RMX3371/proprietary/odm/etc/camera/anc_cl_kernel_ins.cache:$(TARGET_COPY_OUT_ODM)/etc/camera/anc_cl_kernel_ins.cache \
     vendor/realme/RMX3371/proprietary/odm/etc/camera/ancsegbase/anc_cl_kernel.cache:$(TARGET_COPY_OUT_ODM)/etc/camera/ancsegbase/anc_cl_kernel.cache \
@@ -57,10 +67,238 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX3371/proprietary/odm/etc/camera/dualcal_golden.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/dualcal_golden.bin \
     vendor/realme/RMX3371/proprietary/odm/etc/camera/eis_camera.vcfg:$(TARGET_COPY_OUT_ODM)/etc/camera/eis_camera.vcfg \
     vendor/realme/RMX3371/proprietary/odm/etc/camera/fb_default:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_default \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/fb_model/000.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/000.png \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/fb_model/000_pre.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/000_pre.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/fb_model/001.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/001.png \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/fb_model/001_pre.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/001_pre.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/fb_model/002.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/002.png \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/fb_model/002_pre.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/002_pre.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/fb_model/003.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/003.png \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/fb_model/003_pre.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/003_pre.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/fb_model/010.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/010.png \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/fb_model/010_pre.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/010_pre.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/fb_model/011.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/011.png \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/fb_model/011_pre.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/011_pre.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/fb_model/012.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/012.png \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/fb_model/012_pre.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/012_pre.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/fb_model/013.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/013.png \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/fb_model/100.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/100.png \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/fb_model/100_pre.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/100_pre.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/fb_model/101.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/101.png \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/fb_model/101_pre.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/101_pre.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/fb_model/102.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/102.png \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/fb_model/102_pre.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/102_pre.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/fb_model/103.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/103.png \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/fb_model/103_pre.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/103_pre.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/fb_model/110.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/110.png \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/fb_model/110_pre.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/110_pre.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/fb_model/111.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/111.png \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/fb_model/111_pre.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/111_pre.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/fb_model/112.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/112.png \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/fb_model/112_pre.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/112_pre.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/fb_model/113.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/113.png \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/fb_model/200.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/200.png \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/fb_model/200_pre.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/200_pre.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/fb_model/201.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/201.png \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/fb_model/201_pre.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/201_pre.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/fb_model/202.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/202.png \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/fb_model/202_pre.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/202_pre.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/fb_model/203.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/203.png \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/fb_model/203_pre.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/203_pre.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/fb_model/210.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/210.png \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/fb_model/210_pre.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/210_pre.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/fb_model/211.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/211.png \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/fb_model/211_pre.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/211_pre.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/fb_model/212.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/212.png \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/fb_model/212_pre.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/212_pre.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/fb_model/213.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/213.png \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/fb_model/beauty_body.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/beauty_body.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/fb_model/eyeBright.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/eyeBright.png \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/fb_model/eyesMask.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/eyesMask.png \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/fb_model/face_retouch_chinese.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/face_retouch_chinese.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/fb_model/skinLUTs00.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/skinLUTs00.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/fb_model/skinLUTs01.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/skinLUTs01.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/fb_model/skinLUTs02.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/skinLUTs02.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/fb_model/skinLUTs03.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/skinLUTs03.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/fb_model/skinLUTs10.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/skinLUTs10.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/fb_model/skinLUTs11.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/skinLUTs11.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/fb_model/skinLUTs12.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/skinLUTs12.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/fb_model/skinLUTs13.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/skinLUTs13.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/fb_model/skinLUTs_yuv16_00.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/skinLUTs_yuv16_00.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/fb_model/skinLUTs_yuv16_01.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/skinLUTs_yuv16_01.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/fb_model/skinLUTs_yuv16_02.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/skinLUTs_yuv16_02.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/fb_model/skinLUTs_yuv16_03.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/skinLUTs_yuv16_03.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/fb_model/skinLUTs_yuv16_10.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/skinLUTs_yuv16_10.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/fb_model/skinLUTs_yuv16_11.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/skinLUTs_yuv16_11.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/fb_model/skinLUTs_yuv16_12.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/skinLUTs_yuv16_12.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/fb_model/skinLUTs_yuv16_13.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/skinLUTs_yuv16_13.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/fb_model/skinmask.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/skinmask.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/fb_model/skinmask.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/skinmask.png \
     vendor/realme/RMX3371/proprietary/odm/etc/camera/fdc_cl.cache:$(TARGET_COPY_OUT_ODM)/etc/camera/fdc_cl.cache \
     vendor/realme/RMX3371/proprietary/odm/etc/camera/fdc_lite_cl.cache:$(TARGET_COPY_OUT_ODM)/etc/camera/fdc_lite_cl.cache \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/B1VLf4peM:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/B1VLf4peM \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/B1aMqioxf:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/B1aMqioxf \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/B1nmcmWbG:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/B1nmcmWbG \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/B1si_XbZz:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/B1si_XbZz \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/B612Pretty.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/B612Pretty.cube.rgb.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/BJJAwoigM:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/BJJAwoigM \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/BJyKIwqxz:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/BJyKIwqxz \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/BeautyplusMellow-5.CUBE.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/BeautyplusMellow-5.CUBE.rgb.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/ByW7g4bbf:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/ByW7g4bbf \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/ByYo3If:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/ByYo3If \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/BycYf7WWz:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/BycYf7WWz \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/Cold.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/Cold.cube.rgb.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/DL_D_G4.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/DL_D_G4.cube.rgb.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/DL_L_B6.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/DL_L_B6.cube.rgb.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/Emerald.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/Emerald.cube.rgb.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/EyxRbD2UCe:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/EyxRbD2UCe \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/FaceappGrayscale.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/FaceappGrayscale.cube.rgb.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/InsClarendon.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/InsClarendon.cube.rgb.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/InsJuno.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/InsJuno.cube.rgb.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/InsValencia-2.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/InsValencia-2.cube.rgb.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/Martin.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/Martin.cube.rgb.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/OPLUSR0604.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/OPLUSR0604.cube.rgb.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/PP1-soft-2.6.CUBE.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/PP1-soft-2.6.CUBE.rgb.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/PP2-pop-4.1.CUBE.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/PP2-pop-4.1.CUBE.rgb.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/PP3-mono-3.3.CUBE.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/PP3-mono-3.3.CUBE.rgb.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/Radiance.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/Radiance.cube.rgb.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/SJ3mbr6ef:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/SJ3mbr6ef \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/Serenity.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/Serenity.cube.rgb.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/SkpZ8ebbz:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/SkpZ8ebbz \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/SnapseedBright.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/SnapseedBright.cube.rgb.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/SweetSnapAlice-3.CUBE.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/SweetSnapAlice-3.CUBE.rgb.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/Sy4uLSTgf:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/Sy4uLSTgf \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/Syt2KeZZf:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/Syt2KeZZf \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/Texture-70.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/Texture-70.cube.rgb.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/V01-landscape-2.6.CUBE.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/V01-landscape-2.6.CUBE.rgb.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/V02-portrait-2.5.CUBE.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/V02-portrait-2.5.CUBE.rgb.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/V03-food-2.0.CUBE.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/V03-food-2.0.CUBE.rgb.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/V04-night-1.3.CUBE.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/V04-night-1.3.CUBE.rgb.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/V05-mono-3.3.CUBE.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/V05-mono-3.3.CUBE.rgb.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/White.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/White.cube.rgb.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/YoucamAdorable80.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/YoucamAdorable80.cube.rgb.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/b-w-P8.CUBE.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/b-w-P8.CUBE.rgb.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/black_gold.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/black_gold.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/blackandwhite.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/blackandwhite.cube.rgb.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/bowu-2.1.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/bowu-2.1.cube.rgb.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/bright_coloured.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/bright_coloured.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/calm-V5.CUBE.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/calm-V5.CUBE.rgb.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/candy-P7.CUBE.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/candy-P7.CUBE.rgb.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/cola.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/cola.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/cyberpunk-kitsch-3.1.CUBE.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/cyberpunk-kitsch-3.1.CUBE.rgb.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/cyberpunk-neoMilitarism-2.4-final.CUBE.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/cyberpunk-neoMilitarism-2.4-final.CUBE.rgb.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/default:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/default \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/delight-P3.CUBE.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/delight-P3.CUBE.rgb.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/delight-V1.CUBE.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/delight-V1.CUBE.rgb.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/drjw1994.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/drjw1994.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/drjw2010.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/drjw2010.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/f_bin_hideaki:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/f_bin_hideaki \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/f_candy_water_weak.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/f_candy_water_weak.cube.rgb.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/f_contrast_gray_face_dark:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/f_contrast_gray_face_dark \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/f_fuji_strong.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/f_fuji_strong.cube.rgb.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/f_japan_strong.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/f_japan_strong.cube.rgb.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/farewell-V7.CUBE.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/farewell-V7.CUBE.rgb.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/fuji-eterna-v2.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/fuji-eterna-v2.cube.rgb.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/fuji.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/fuji.cube.rgb.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/gourmet.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/gourmet.cube.rgb.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/interstellar_space.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/interstellar_space.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/jiari-2.0.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/jiari-2.0.cube.rgb.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/jw_sun.CUBE.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/jw_sun.CUBE.rgb.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/jw_surprise.CUBE.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/jw_surprise.CUBE.rgb.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/kodak.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/kodak.cube.rgb.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/lvtu-2.0.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/lvtu-2.0.cube.rgb.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/meiwei-2.2.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/meiwei-2.2.cube.rgb.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/mellow-V3.CUBE.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/mellow-V3.CUBE.rgb.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/misty-P5.CUBE.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/misty-P5.CUBE.rgb.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/misty-V4.CUBE.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/misty-V4.CUBE.rgb.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/mono.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/mono.cube.rgb.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/morandi.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/morandi.cube.rgb.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/natural-P1.CUBE.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/natural-P1.CUBE.rgb.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/natural.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/natural.cube.rgb.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/neon-2020.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/neon-2020.cube.rgb.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/oplus-black-gold.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/oplus-black-gold.cube.rgb.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/oplus-cyberpunk.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/oplus-cyberpunk.cube.rgb.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/oplus-nightcity.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/oplus-nightcity.cube.rgb.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/oplus-r-black-gold-1.1-RGB.CUBE.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/oplus-r-black-gold-1.1-RGB.CUBE.rgb.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/oplus-r-cyberpunk-RGB.CUBE.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/oplus-r-cyberpunk-RGB.CUBE.rgb.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/oplus-r-infra-RGB.CUBE.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/oplus-r-infra-RGB.CUBE.rgb.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/oplus-yellow-blue.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/oplus-yellow-blue.cube.rgb.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/oplus_SAREK_III.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/oplus_SAREK_III.cube.rgb.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/oplus_VAEROY_III.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/oplus_VAEROY_III.cube.rgb.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/oplus_YLLAAS.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/oplus_YLLAAS.cube.rgb.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/oplus_r4.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/oplus_r4.cube.rgb.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/oplus_r5.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/oplus_r5.cube.rgb.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/oplus_r6.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/oplus_r6.cube.rgb.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/oplus_video_filter_black_and_white:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/oplus_video_filter_black_and_white \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/oplus_video_filter_highlight:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/oplus_video_filter_highlight \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/oplus_video_filter_ins:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/oplus_video_filter_ins \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/oplus_video_filter_natal:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/oplus_video_filter_natal \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/oplus_video_filter_olympus:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/oplus_video_filter_olympus \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/oplus_video_filter_plain:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/oplus_video_filter_plain \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/oplus_video_filter_show:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/oplus_video_filter_show \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/oplus_video_filter_solar:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/oplus_video_filter_solar \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/oplus_video_filter_strong:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/oplus_video_filter_strong \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/oplus_video_filter_west:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/oplus_video_filter_west \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/oppo_video_filter_black_and_white:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/oppo_video_filter_black_and_white \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/oppo_video_filter_highlight:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/oppo_video_filter_highlight \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/oppo_video_filter_ins:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/oppo_video_filter_ins \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/oppo_video_filter_natal:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/oppo_video_filter_natal \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/oppo_video_filter_olympus:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/oppo_video_filter_olympus \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/oppo_video_filter_plain:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/oppo_video_filter_plain \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/oppo_video_filter_show:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/oppo_video_filter_show \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/oppo_video_filter_solar:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/oppo_video_filter_solar \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/oppo_video_filter_strong:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/oppo_video_filter_strong \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/oppo_video_filter_west:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/oppo_video_filter_west \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/p4_1.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/p4_1.cube.rgb.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/p4_2.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/p4_2.cube.rgb.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/p4_3.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/p4_3.cube.rgb.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/p4_4.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/p4_4.cube.rgb.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/qiuri-2.0.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/qiuri-2.0.cube.rgb.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/r1JaFSZZG:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/r1JaFSZZG \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/r1PrfoolG:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/r1PrfoolG \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/rJ5g5vPWG:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/rJ5g5vPWG \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/rJxJtmaez:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/rJxJtmaez \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/red-red.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/red-red.cube.rgb.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/rkMhq4ZWf:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/rkMhq4ZWf \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/rkx5u4Zbf:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/rkx5u4Zbf \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/senlin-2.0.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/senlin-2.0.cube.rgb.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/serene-P9.CUBE.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/serene-P9.CUBE.rgb.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/sky-blue.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/sky-blue.cube.rgb.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/sweet-P2.CUBE.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/sweet-P2.CUBE.rgb.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/sweet-V2.CUBE.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/sweet-V2.CUBE.rgb.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/tree-green.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/tree-green.cube.rgb.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/type_fuji_acros:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/type_fuji_acros \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/type_fuji_astia:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/type_fuji_astia \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/type_fuji_chrome:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/type_fuji_chrome \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/type_fuji_provia:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/type_fuji_provia \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/type_fuji_velvia:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/type_fuji_velvia \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/vivid-cool.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/vivid-cool.cube.rgb.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/vivid-lut.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/vivid-lut.cube.rgb.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/vivid-warm.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/vivid-warm.cube.rgb.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_lut/yuanqi-2.2s.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/yuanqi-2.2s.cube.rgb.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_res/film_grain_small.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_res/film_grain_small.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_res/lut_all_points.png:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_res/lut_all_points.png \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/filters_res/overlay_p4_3_weak.png:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_res/overlay_p4_3_weak.png \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/fw_lut/skinLUTs_yuv16_00.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fw_lut/skinLUTs_yuv16_00.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/fw_lut/skinLUTs_yuv16_01.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fw_lut/skinLUTs_yuv16_01.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/fw_lut/skinLUTs_yuv16_02.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fw_lut/skinLUTs_yuv16_02.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/fw_lut/skinLUTs_yuv16_03.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fw_lut/skinLUTs_yuv16_03.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/fw_lut/skinLUTs_yuv16_10.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fw_lut/skinLUTs_yuv16_10.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/fw_lut/skinLUTs_yuv16_11.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fw_lut/skinLUTs_yuv16_11.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/fw_lut/skinLUTs_yuv16_12.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fw_lut/skinLUTs_yuv16_12.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/fw_lut/skinLUTs_yuv16_13.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fw_lut/skinLUTs_yuv16_13.bin \
     vendor/realme/RMX3371/proprietary/odm/etc/camera/fwk_config.json:$(TARGET_COPY_OUT_ODM)/etc/camera/fwk_config.json \
     vendor/realme/RMX3371/proprietary/odm/etc/camera/gasryuv_1.2_wp.model:$(TARGET_COPY_OUT_ODM)/etc/camera/gasryuv_1.2_wp.model \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/gesture/modules/tt_hand_box_reg_v12.0.model:$(TARGET_COPY_OUT_ODM)/etc/camera/gesture/modules/tt_hand_box_reg_v12.0.model \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/gesture/modules/tt_hand_det_v11.0.model:$(TARGET_COPY_OUT_ODM)/etc/camera/gesture/modules/tt_hand_det_v11.0.model \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/gesture/modules/tt_hand_gesture_v11.1.model:$(TARGET_COPY_OUT_ODM)/etc/camera/gesture/modules/tt_hand_gesture_v11.1.model \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/gesture/modules/tt_hand_kp_v6.0.model:$(TARGET_COPY_OUT_ODM)/etc/camera/gesture/modules/tt_hand_kp_v6.0.model \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/gesture/modules/tt_hand_lr_v3.0.model:$(TARGET_COPY_OUT_ODM)/etc/camera/gesture/modules/tt_hand_lr_v3.0.model \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/gesture/tt_hand_box_reg_v12.0.model:$(TARGET_COPY_OUT_ODM)/etc/camera/gesture/tt_hand_box_reg_v12.0.model \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/gesture/tt_hand_det_v11.0.model:$(TARGET_COPY_OUT_ODM)/etc/camera/gesture/tt_hand_det_v11.0.model \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/gesture/tt_hand_gesture_v11.1.model:$(TARGET_COPY_OUT_ODM)/etc/camera/gesture/tt_hand_gesture_v11.1.model \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/gesture/tt_hand_kp_v6.0.model:$(TARGET_COPY_OUT_ODM)/etc/camera/gesture/tt_hand_kp_v6.0.model \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/gesture/tt_hand_lr_v3.0.model:$(TARGET_COPY_OUT_ODM)/etc/camera/gesture/tt_hand_lr_v3.0.model \
     vendor/realme/RMX3371/proprietary/odm/etc/camera/micFilter/blue_pink_3.png:$(TARGET_COPY_OUT_ODM)/etc/camera/micFilter/blue_pink_3.png \
     vendor/realme/RMX3371/proprietary/odm/etc/camera/micFilter/curve_0.png:$(TARGET_COPY_OUT_ODM)/etc/camera/micFilter/curve_0.png \
     vendor/realme/RMX3371/proprietary/odm/etc/camera/micFilter/green_orange_2.png:$(TARGET_COPY_OUT_ODM)/etc/camera/micFilter/green_orange_2.png \
@@ -70,8 +308,197 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX3371/proprietary/odm/etc/camera/motionblur/model.data:$(TARGET_COPY_OUT_ODM)/etc/camera/motionblur/model.data \
     vendor/realme/RMX3371/proprietary/odm/etc/camera/mtStereoParams.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/mtStereoParams.bin \
     vendor/realme/RMX3371/proprietary/odm/etc/camera/mwStereoParams.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/mwStereoParams.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/colorLut0:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/colorLut0 \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/colorLut1:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/colorLut1 \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/colorLut10:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/colorLut10 \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/colorLut11:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/colorLut11 \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/colorLut12:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/colorLut12 \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/colorLut13:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/colorLut13 \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/colorLut14:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/colorLut14 \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/colorLut15:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/colorLut15 \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/colorLut16:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/colorLut16 \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/colorLut17:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/colorLut17 \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/colorLut18:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/colorLut18 \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/colorLut2:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/colorLut2 \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/colorLut3:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/colorLut3 \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/colorLut4:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/colorLut4 \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/colorLut5:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/colorLut5 \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/colorLut6:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/colorLut6 \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/colorLut7:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/colorLut7 \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/colorLut8:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/colorLut8 \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/colorLut9:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/colorLut9 \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/curveLut0:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/curveLut0 \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/curveLut1:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/curveLut1 \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/curveLut10:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/curveLut10 \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/curveLut11:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/curveLut11 \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/curveLut12:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/curveLut12 \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/curveLut13:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/curveLut13 \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/curveLut14:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/curveLut14 \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/curveLut15:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/curveLut15 \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/curveLut16:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/curveLut16 \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/curveLut17:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/curveLut17 \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/curveLut18:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/curveLut18 \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/curveLut2:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/curveLut2 \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/curveLut3:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/curveLut3 \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/curveLut4:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/curveLut4 \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/curveLut5:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/curveLut5 \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/curveLut6:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/curveLut6 \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/curveLut7:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/curveLut7 \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/curveLut8:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/curveLut8 \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/curveLut9:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/curveLut9 \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/frameSet.ini:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/frameSet.ini \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/param0.ini:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/param0.ini \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/param1.ini:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/param1.ini \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/param10.ini:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/param10.ini \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/param11.ini:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/param11.ini \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/param12.ini:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/param12.ini \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/param13.ini:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/param13.ini \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/param14.ini:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/param14.ini \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/param15.ini:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/param15.ini \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/param16.ini:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/param16.ini \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/param17.ini:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/param17.ini \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/param18.ini:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/param18.ini \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/param2.ini:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/param2.ini \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/param3.ini:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/param3.ini \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/param4.ini:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/param4.ini \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/param5.ini:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/param5.ini \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/param6.ini:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/param6.ini \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/param7.ini:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/param7.ini \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/param8.ini:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/param8.ini \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/param9.ini:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/param9.ini \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/photoSet.ini:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/photoSet.ini \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/platformSet.ini:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/platformSet.ini \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/sceneList.txt:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/sceneList.txt \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/colorLut0:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/colorLut0 \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/colorLut1:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/colorLut1 \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/colorLut10:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/colorLut10 \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/colorLut11:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/colorLut11 \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/colorLut12:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/colorLut12 \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/colorLut13:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/colorLut13 \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/colorLut14:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/colorLut14 \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/colorLut15:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/colorLut15 \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/colorLut16:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/colorLut16 \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/colorLut17:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/colorLut17 \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/colorLut18:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/colorLut18 \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/colorLut2:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/colorLut2 \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/colorLut3:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/colorLut3 \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/colorLut4:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/colorLut4 \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/colorLut5:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/colorLut5 \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/colorLut6:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/colorLut6 \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/colorLut7:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/colorLut7 \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/colorLut8:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/colorLut8 \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/colorLut9:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/colorLut9 \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/curveLut0:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/curveLut0 \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/curveLut1:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/curveLut1 \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/curveLut10:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/curveLut10 \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/curveLut11:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/curveLut11 \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/curveLut12:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/curveLut12 \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/curveLut13:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/curveLut13 \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/curveLut14:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/curveLut14 \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/curveLut15:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/curveLut15 \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/curveLut16:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/curveLut16 \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/curveLut17:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/curveLut17 \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/curveLut18:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/curveLut18 \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/curveLut2:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/curveLut2 \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/curveLut3:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/curveLut3 \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/curveLut4:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/curveLut4 \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/curveLut5:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/curveLut5 \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/curveLut6:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/curveLut6 \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/curveLut7:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/curveLut7 \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/curveLut8:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/curveLut8 \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/curveLut9:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/curveLut9 \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/frameSet.ini:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/frameSet.ini \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/param0.ini:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/param0.ini \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/param1.ini:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/param1.ini \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/param10.ini:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/param10.ini \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/param11.ini:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/param11.ini \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/param12.ini:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/param12.ini \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/param13.ini:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/param13.ini \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/param14.ini:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/param14.ini \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/param15.ini:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/param15.ini \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/param16.ini:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/param16.ini \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/param17.ini:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/param17.ini \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/param18.ini:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/param18.ini \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/param2.ini:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/param2.ini \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/param3.ini:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/param3.ini \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/param4.ini:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/param4.ini \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/param5.ini:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/param5.ini \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/param6.ini:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/param6.ini \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/param7.ini:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/param7.ini \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/param8.ini:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/param8.ini \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/param9.ini:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/param9.ini \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/photoSet.ini:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/photoSet.ini \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/platformSet.ini:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/platformSet.ini \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/sceneList.txt:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/sceneList.txt \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pfb_bin/BeardSharp.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/pfb_bin/BeardSharp.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pfb_bin/BeardSharp.frag:$(TARGET_COPY_OUT_ODM)/etc/camera/pfb_bin/BeardSharp.frag \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pfb_bin/BeardSharp.vert:$(TARGET_COPY_OUT_ODM)/etc/camera/pfb_bin/BeardSharp.vert \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pfb_bin/PreAddSRBinary.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/pfb_bin/PreAddSRBinary.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pfb_bin/PreCalVarBinary.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/pfb_bin/PreCalVarBinary.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pfb_bin/PreCalcSRBinary.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/pfb_bin/PreCalcSRBinary.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pfb_bin/PreDepouchBinary.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/pfb_bin/PreDepouchBinary.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pfb_bin/PreEyeMeanBinary.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/pfb_bin/PreEyeMeanBinary.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pfb_bin/PreHighPassBinary.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/pfb_bin/PreHighPassBinary.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pfb_bin/PreHighPassPreBinary.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/pfb_bin/PreHighPassPreBinary.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pfb_bin/PreHoriFilterBinary.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/pfb_bin/PreHoriFilterBinary.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pfb_bin/PreMakeupBinary.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/pfb_bin/PreMakeupBinary.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pfb_bin/PreMakeupMultiFaceBinary.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/pfb_bin/PreMakeupMultiFaceBinary.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pfb_bin/PreMakeupSingleFaceBinary.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/pfb_bin/PreMakeupSingleFaceBinary.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pfb_bin/PreMorphBinary.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/pfb_bin/PreMorphBinary.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pfb_bin/PreOnlywhitenBinary.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/pfb_bin/PreOnlywhitenBinary.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pfb_bin/PreSkintuneBinary.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/pfb_bin/PreSkintuneBinary.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pfb_bin/PreSkintuneMRTBinary.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/pfb_bin/PreSkintuneMRTBinary.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pfb_bin/PreSurfaceBlurBinary.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/pfb_bin/PreSurfaceBlurBinary.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pfb_bin/PreVertFilterBinary.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/pfb_bin/PreVertFilterBinary.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pfb_bin/PreVertSurBinary.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/pfb_bin/PreVertSurBinary.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pfb_bin/SkinCalcHue.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/pfb_bin/SkinCalcHue.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pfb_bin/SkinCalcHue.frag:$(TARGET_COPY_OUT_ODM)/etc/camera/pfb_bin/SkinCalcHue.frag \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pfb_bin/SkinCalcHue.vert:$(TARGET_COPY_OUT_ODM)/etc/camera/pfb_bin/SkinCalcHue.vert \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pfb_bin/SkinColorBlur.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/pfb_bin/SkinColorBlur.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pfb_bin/SkinColorBlur.frag:$(TARGET_COPY_OUT_ODM)/etc/camera/pfb_bin/SkinColorBlur.frag \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pfb_bin/SkinColorBlur.vert:$(TARGET_COPY_OUT_ODM)/etc/camera/pfb_bin/SkinColorBlur.vert \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pfb_bin/SkinColorUnify.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/pfb_bin/SkinColorUnify.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pfb_bin/SkinColorUnify.frag:$(TARGET_COPY_OUT_ODM)/etc/camera/pfb_bin/SkinColorUnify.frag \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pfb_bin/SkinColorUnify.vert:$(TARGET_COPY_OUT_ODM)/etc/camera/pfb_bin/SkinColorUnify.vert \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pfb_bin/SkinHueUnify.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/pfb_bin/SkinHueUnify.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pfb_bin/SkinHueUnify.frag:$(TARGET_COPY_OUT_ODM)/etc/camera/pfb_bin/SkinHueUnify.frag \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pfb_bin/SkinHueUnify.vert:$(TARGET_COPY_OUT_ODM)/etc/camera/pfb_bin/SkinHueUnify.vert \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pfb_bin/ThirdPartyPreHoriFilterBinary.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/pfb_bin/ThirdPartyPreHoriFilterBinary.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pfb_bin/ThirdPartyPreMorphBinary.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/pfb_bin/ThirdPartyPreMorphBinary.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pfb_bin/ThirdPartyPreOnlywhitenBinary.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/pfb_bin/ThirdPartyPreOnlywhitenBinary.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pfb_bin/ThirdPartyPreSkintuneBinary.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/pfb_bin/ThirdPartyPreSkintuneBinary.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pfb_bin/ThirdPartyPreSkintuneMRTBinary.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/pfb_bin/ThirdPartyPreSkintuneMRTBinary.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pfb_bin/ThirdPartyPreVertFilterBinary.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/pfb_bin/ThirdPartyPreVertFilterBinary.bin \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/pfb_bin/ThirdPartyPreVertSurBinary.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/pfb_bin/ThirdPartyPreVertSurBinary.bin \
     vendor/realme/RMX3371/proprietary/odm/etc/camera/settings_fdc.txt:$(TARGET_COPY_OUT_ODM)/etc/camera/settings_fdc.txt \
     vendor/realme/RMX3371/proprietary/odm/etc/camera/settings_fdc_lite.txt:$(TARGET_COPY_OUT_ODM)/etc/camera/settings_fdc_lite.txt \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/sticker/M_SenseME_Action_5.2.12.model:$(TARGET_COPY_OUT_ODM)/etc/camera/sticker/M_SenseME_Action_5.2.12.model \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/sticker/material/animoji/data.zip:$(TARGET_COPY_OUT_ODM)/etc/camera/sticker/material/animoji/data.zip \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/sticker/material/animoji/snowleopard_v_0_0_0_9.zip:$(TARGET_COPY_OUT_ODM)/etc/camera/sticker/material/animoji/snowleopard_v_0_0_0_9.zip \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/tonemap/curve_lut_0:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/curve_lut_0 \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/tonemap/curve_lut_1:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/curve_lut_1 \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/tonemap/curve_lut_10:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/curve_lut_10 \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/tonemap/curve_lut_2:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/curve_lut_2 \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/tonemap/curve_lut_3:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/curve_lut_3 \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/tonemap/curve_lut_4:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/curve_lut_4 \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/tonemap/curve_lut_5:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/curve_lut_5 \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/tonemap/curve_lut_6:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/curve_lut_6 \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/tonemap/curve_lut_7:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/curve_lut_7 \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/tonemap/curve_lut_8:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/curve_lut_8 \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/tonemap/curve_lut_9:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/curve_lut_9 \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/tonemap/list.txt:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/list.txt \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/tonemap/s_curve_lut:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/s_curve_lut \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/tonemap/tonemap_lut_0:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/tonemap_lut_0 \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/tonemap/tonemap_lut_1:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/tonemap_lut_1 \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/tonemap/tonemap_lut_10:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/tonemap_lut_10 \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/tonemap/tonemap_lut_2:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/tonemap_lut_2 \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/tonemap/tonemap_lut_3:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/tonemap_lut_3 \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/tonemap/tonemap_lut_4:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/tonemap_lut_4 \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/tonemap/tonemap_lut_5:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/tonemap_lut_5 \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/tonemap/tonemap_lut_6:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/tonemap_lut_6 \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/tonemap/tonemap_lut_7:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/tonemap_lut_7 \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/tonemap/tonemap_lut_8:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/tonemap_lut_8 \
+    vendor/realme/RMX3371/proprietary/odm/etc/camera/tonemap/tonemap_lut_9:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/tonemap_lut_9 \
     vendor/realme/RMX3371/proprietary/odm/etc/camera/wide.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/wide.bin \
     vendor/realme/RMX3371/proprietary/odm/etc/init/android.hardware.drm@1.3-service.widevine.rc:$(TARGET_COPY_OUT_ODM)/etc/init/android.hardware.drm@1.3-service.widevine.rc \
     vendor/realme/RMX3371/proprietary/odm/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc \
@@ -95,32 +522,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX3371/proprietary/odm/etc/sensor/config/kona_qrd_mn29005.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/kona_qrd_mn29005.json \
     vendor/realme/RMX3371/proprietary/odm/etc/sensor/config/kona_qrd_sx933x_0.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/kona_qrd_sx933x_0.json \
     vendor/realme/RMX3371/proprietary/odm/etc/sensor/sensor_config.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/sensor_config.json \
-    vendor/realme/RMX3371/proprietary/odm/etc/lvimfs_params/LVACFS_Configuration.txt:$(TARGET_COPY_OUT_ODM)/etc/lvimfs_params/LVACFS_Configuration.txt \
-    vendor/realme/RMX3371/proprietary/odm/etc/lvimfs_params/LVIMFS_Calibration_2mic.dat:$(TARGET_COPY_OUT_ODM)/etc/lvimfs_params/LVIMFS_Calibration_2mic.dat \
-    vendor/realme/RMX3371/proprietary/odm/etc/lvimfs_params/LVIMFS_Parameter_ID10_MIC_VR.txt:$(TARGET_COPY_OUT_ODM)/etc/lvimfs_params/LVIMFS_Parameter_ID10_MIC_VR.txt \
-    vendor/realme/RMX3371/proprietary/odm/etc/lvimfs_params/LVIMFS_Parameter_ID11_HE.txt:$(TARGET_COPY_OUT_ODM)/etc/lvimfs_params/LVIMFS_Parameter_ID11_HE.txt \
-    vendor/realme/RMX3371/proprietary/odm/etc/lvimfs_params/LVIMFS_Parameter_ID12_HE_APP1.txt:$(TARGET_COPY_OUT_ODM)/etc/lvimfs_params/LVIMFS_Parameter_ID12_HE_APP1.txt \
-    vendor/realme/RMX3371/proprietary/odm/etc/lvimfs_params/LVIMFS_Parameter_ID13_HE_APP2.txt:$(TARGET_COPY_OUT_ODM)/etc/lvimfs_params/LVIMFS_Parameter_ID13_HE_APP2.txt \
-    vendor/realme/RMX3371/proprietary/odm/etc/lvimfs_params/LVIMFS_Parameter_ID14_HE_Cam.txt:$(TARGET_COPY_OUT_ODM)/etc/lvimfs_params/LVIMFS_Parameter_ID14_HE_Cam.txt \
-    vendor/realme/RMX3371/proprietary/odm/etc/lvimfs_params/LVIMFS_Parameter_ID15_HE_Conference.txt:$(TARGET_COPY_OUT_ODM)/etc/lvimfs_params/LVIMFS_Parameter_ID15_HE_Conference.txt \
-    vendor/realme/RMX3371/proprietary/odm/etc/lvimfs_params/LVIMFS_Parameter_ID16_HE_Fast.txt:$(TARGET_COPY_OUT_ODM)/etc/lvimfs_params/LVIMFS_Parameter_ID16_HE_Fast.txt \
-    vendor/realme/RMX3371/proprietary/odm/etc/lvimfs_params/LVIMFS_Parameter_ID17_HE_Interview.txt:$(TARGET_COPY_OUT_ODM)/etc/lvimfs_params/LVIMFS_Parameter_ID17_HE_Interview.txt \
-    vendor/realme/RMX3371/proprietary/odm/etc/lvimfs_params/LVIMFS_Parameter_ID18_HE_Unprocess.txt:$(TARGET_COPY_OUT_ODM)/etc/lvimfs_params/LVIMFS_Parameter_ID18_HE_Unprocess.txt \
-    vendor/realme/RMX3371/proprietary/odm/etc/lvimfs_params/LVIMFS_Parameter_ID19_HE_Voice.txt:$(TARGET_COPY_OUT_ODM)/etc/lvimfs_params/LVIMFS_Parameter_ID19_HE_Voice.txt \
-    vendor/realme/RMX3371/proprietary/odm/etc/lvimfs_params/LVIMFS_Parameter_ID1_MIC_Normal.txt:$(TARGET_COPY_OUT_ODM)/etc/lvimfs_params/LVIMFS_Parameter_ID1_MIC_Normal.txt \
-    vendor/realme/RMX3371/proprietary/odm/etc/lvimfs_params/LVIMFS_Parameter_ID20_HE_VR.txt:$(TARGET_COPY_OUT_ODM)/etc/lvimfs_params/LVIMFS_Parameter_ID20_HE_VR.txt \
-    vendor/realme/RMX3371/proprietary/odm/etc/lvimfs_params/LVIMFS_Parameter_ID21_USB_Normal.txt:$(TARGET_COPY_OUT_ODM)/etc/lvimfs_params/LVIMFS_Parameter_ID21_USB_Normal.txt \
-    vendor/realme/RMX3371/proprietary/odm/etc/lvimfs_params/LVIMFS_Parameter_ID22_USB_APP1.txt:$(TARGET_COPY_OUT_ODM)/etc/lvimfs_params/LVIMFS_Parameter_ID22_USB_APP1.txt \
-    vendor/realme/RMX3371/proprietary/odm/etc/lvimfs_params/LVIMFS_Parameter_ID23_BT_Normal.txt:$(TARGET_COPY_OUT_ODM)/etc/lvimfs_params/LVIMFS_Parameter_ID23_BT_Normal.txt \
-    vendor/realme/RMX3371/proprietary/odm/etc/lvimfs_params/LVIMFS_Parameter_ID24_BT_APP1.txt:$(TARGET_COPY_OUT_ODM)/etc/lvimfs_params/LVIMFS_Parameter_ID24_BT_APP1.txt \
-    vendor/realme/RMX3371/proprietary/odm/etc/lvimfs_params/LVIMFS_Parameter_ID2_MIC_APP1.txt:$(TARGET_COPY_OUT_ODM)/etc/lvimfs_params/LVIMFS_Parameter_ID2_MIC_APP1.txt \
-    vendor/realme/RMX3371/proprietary/odm/etc/lvimfs_params/LVIMFS_Parameter_ID3_MIC_APP2.txt:$(TARGET_COPY_OUT_ODM)/etc/lvimfs_params/LVIMFS_Parameter_ID3_MIC_APP2.txt \
-    vendor/realme/RMX3371/proprietary/odm/etc/lvimfs_params/LVIMFS_Parameter_ID4_MIC_Cam.txt:$(TARGET_COPY_OUT_ODM)/etc/lvimfs_params/LVIMFS_Parameter_ID4_MIC_Cam.txt \
-    vendor/realme/RMX3371/proprietary/odm/etc/lvimfs_params/LVIMFS_Parameter_ID5_MIC_Conference.txt:$(TARGET_COPY_OUT_ODM)/etc/lvimfs_params/LVIMFS_Parameter_ID5_MIC_Conference.txt \
-    vendor/realme/RMX3371/proprietary/odm/etc/lvimfs_params/LVIMFS_Parameter_ID6_MIC_Fast.txt:$(TARGET_COPY_OUT_ODM)/etc/lvimfs_params/LVIMFS_Parameter_ID6_MIC_Fast.txt \
-    vendor/realme/RMX3371/proprietary/odm/etc/lvimfs_params/LVIMFS_Parameter_ID7_MIC_Interview.txt:$(TARGET_COPY_OUT_ODM)/etc/lvimfs_params/LVIMFS_Parameter_ID7_MIC_Interview.txt \
-    vendor/realme/RMX3371/proprietary/odm/etc/lvimfs_params/LVIMFS_Parameter_ID8_MIC_Unprocess.txt:$(TARGET_COPY_OUT_ODM)/etc/lvimfs_params/LVIMFS_Parameter_ID8_MIC_Unprocess.txt \
-    vendor/realme/RMX3371/proprietary/odm/etc/lvimfs_params/LVIMFS_Parameter_ID9_MIC_Voice.txt:$(TARGET_COPY_OUT_ODM)/etc/lvimfs_params/LVIMFS_Parameter_ID9_MIC_Voice.txt \
     vendor/realme/RMX3371/proprietary/odm/etc/wifi/bdwlan.elf:$(TARGET_COPY_OUT_ODM)/etc/wifi/bdwlan.elf \
     vendor/realme/RMX3371/proprietary/odm/firmware/100ms_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/100ms_RTP.bin \
     vendor/realme/RMX3371/proprietary/odm/firmware/120ms_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/120ms_RTP.bin \
@@ -147,104 +548,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX3371/proprietary/odm/firmware/500ms_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/500ms_RTP.bin \
     vendor/realme/RMX3371/proprietary/odm/firmware/60ms_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/60ms_RTP.bin \
     vendor/realme/RMX3371/proprietary/odm/firmware/80ms_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/80ms_RTP.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/AT500ms_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/AT500ms_RTP.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/Chase_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/Chase_RTP.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/Climber_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/Climber_RTP.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/In_game_alarm_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/In_game_alarm_RTP.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/In_game_ringtone_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/In_game_ringtone_RTP.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/In_game_sms_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/In_game_sms_RTP.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/Rock_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/Rock_RTP.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/VZW_Alrwave_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/VZW_Alrwave_RTP.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/Version_Alert_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/Version_Alert_RTP.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/Wake_up_samurai_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/Wake_up_samurai_RTP.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/agingtest_160hz_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/agingtest_160hz_RTP.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/agingtest_162hz_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/agingtest_162hz_RTP.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/agingtest_164hz_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/agingtest_164hz_RTP.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/agingtest_166hz_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/agingtest_166hz_RTP.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/agingtest_168hz_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/agingtest_168hz_RTP.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/agingtest_170hz_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/agingtest_170hz_RTP.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/agingtest_172hz_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/agingtest_172hz_RTP.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/agingtest_174hz_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/agingtest_174hz_RTP.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/agingtest_176hz_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/agingtest_176hz_RTP.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/agingtest_178hz_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/agingtest_178hz_RTP.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/agingtest_180hz_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/agingtest_180hz_RTP.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/alarm_Alarm_clock_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/alarm_Alarm_clock_RTP.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/alarm_Beep_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/alarm_Beep_RTP.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/alarm_Breeze_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/alarm_Breeze_RTP.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/alarm_Dawn_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/alarm_Dawn_RTP.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/alarm_Dream_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/alarm_Dream_RTP.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/alarm_Fluttering_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/alarm_Fluttering_RTP.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/alarm_Flyer_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/alarm_Flyer_RTP.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/alarm_Interesting_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/alarm_Interesting_RTP.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/alarm_Leisurely_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/alarm_Leisurely_RTP.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/alarm_Memory_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/alarm_Memory_RTP.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/alarm_Relieved_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/alarm_Relieved_RTP.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/alarm_Ripple_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/alarm_Ripple_RTP.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/alarm_Slowly_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/alarm_Slowly_RTP.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/alarm_Stars_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/alarm_Stars_RTP.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/alarm_Surging_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/alarm_Surging_RTP.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/alarm_The_wind_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/alarm_The_wind_RTP.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/alarm_Walking_in_the_rain_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/alarm_Walking_in_the_rain_RTP.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/alarm_spring_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/alarm_spring_RTP.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/alarm_tactfully_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/alarm_tactfully_RTP.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_About_School_RTP_17.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_About_School_RTP_17.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_About_School_RTP_17_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_About_School_RTP_17_165Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_About_School_RTP_17_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_About_School_RTP_17_175Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_About_School_RTP_17_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_About_School_RTP_17_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_About_School_RTP_17_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_About_School_RTP_17_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_About_School_RTP_17_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_About_School_RTP_17_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_About_School_RTP_17_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_About_School_RTP_17_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Airy_morning_RTP_70.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Airy_morning_RTP_70.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Airy_morning_RTP_70_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Airy_morning_RTP_70_165Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Airy_morning_RTP_70_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Airy_morning_RTP_70_175Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Airy_morning_RTP_70_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Airy_morning_RTP_70_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Airy_morning_RTP_70_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Airy_morning_RTP_70_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Airy_morning_RTP_70_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Airy_morning_RTP_70_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Airy_morning_RTP_70_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Airy_morning_RTP_70_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Appear_channel_RTP_oplusos7_123.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Appear_channel_RTP_oplusos7_123.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Appear_channel_RTP_oplusos7_123_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Appear_channel_RTP_oplusos7_123_165Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Appear_channel_RTP_oplusos7_123_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Appear_channel_RTP_oplusos7_123_175Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Appear_channel_RTP_oplusos7_123_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Appear_channel_RTP_oplusos7_123_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Appear_channel_RTP_oplusos7_123_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Appear_channel_RTP_oplusos7_123_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Appear_channel_RTP_oplusos7_123_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Appear_channel_RTP_oplusos7_123_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Appear_channel_RTP_oplusos7_123_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Appear_channel_RTP_oplusos7_123_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Artist_Alarm_RTP_153_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Artist_Alarm_RTP_153_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Artist_Alarm_RTP_153_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Artist_Alarm_RTP_153_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Artist_Alarm_RTP_153_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Artist_Alarm_RTP_153_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Artist_Alarm_RTP_153_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Artist_Alarm_RTP_153_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Artist_Notification_RTP_150_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Artist_Notification_RTP_150_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Artist_Notification_RTP_150_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Artist_Notification_RTP_150_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Artist_Notification_RTP_150_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Artist_Notification_RTP_150_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Artist_Notification_RTP_150_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Artist_Notification_RTP_150_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Artist_Ringtong_RTP_151_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Artist_Ringtong_RTP_151_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Artist_Ringtong_RTP_151_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Artist_Ringtong_RTP_151_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Artist_Ringtong_RTP_151_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Artist_Ringtong_RTP_151_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Artist_Ringtong_RTP_151_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Artist_Ringtong_RTP_151_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Artist_Text_RTP_152_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Artist_Text_RTP_152_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Artist_Text_RTP_152_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Artist_Text_RTP_152_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Artist_Text_RTP_152_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Artist_Text_RTP_152_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Artist_Text_RTP_152_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Artist_Text_RTP_152_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Bliss_RTP_oplusos7_138.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Bliss_RTP_oplusos7_138.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Bliss_RTP_oplusos7_138_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Bliss_RTP_oplusos7_138_165Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Bliss_RTP_oplusos7_138_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Bliss_RTP_oplusos7_138_175Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Bliss_RTP_oplusos7_138_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Bliss_RTP_oplusos7_138_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Bliss_RTP_oplusos7_138_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Bliss_RTP_oplusos7_138_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Bliss_RTP_oplusos7_138_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Bliss_RTP_oplusos7_138_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Bliss_RTP_oplusos7_138_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Bliss_RTP_oplusos7_138_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Bright_channel_RTP_oplusos7_128.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Bright_channel_RTP_oplusos7_128.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Bright_channel_RTP_oplusos7_128_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Bright_channel_RTP_oplusos7_128_165Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Bright_channel_RTP_oplusos7_128_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Bright_channel_RTP_oplusos7_128_175Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Bright_channel_RTP_oplusos7_128_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Bright_channel_RTP_oplusos7_128_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Bright_channel_RTP_oplusos7_128_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Bright_channel_RTP_oplusos7_128_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Bright_channel_RTP_oplusos7_128_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Bright_channel_RTP_oplusos7_128_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Bright_channel_RTP_oplusos7_128_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Bright_channel_RTP_oplusos7_128_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Childhood_RTP_19.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Childhood_RTP_19.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Childhood_RTP_19_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Childhood_RTP_19_165Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Childhood_RTP_19_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Childhood_RTP_19_175Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Childhood_RTP_19_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Childhood_RTP_19_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Childhood_RTP_19_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Childhood_RTP_19_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Childhood_RTP_19_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Childhood_RTP_19_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Childhood_RTP_19_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Childhood_RTP_19_237Hz.bin \
     vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Classical_ring_RTP_oplusos7_135.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Classical_ring_RTP_oplusos7_135.bin \
     vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Classical_ring_RTP_oplusos7_135_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Classical_ring_RTP_oplusos7_135_165Hz.bin \
     vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Classical_ring_RTP_oplusos7_135_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Classical_ring_RTP_oplusos7_135_175Hz.bin \
@@ -252,466 +555,11 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Classical_ring_RTP_oplusos7_135_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Classical_ring_RTP_oplusos7_135_230Hz.bin \
     vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Classical_ring_RTP_oplusos7_135_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Classical_ring_RTP_oplusos7_135_234Hz.bin \
     vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Classical_ring_RTP_oplusos7_135_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Classical_ring_RTP_oplusos7_135_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Commuting_RTP_20.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Commuting_RTP_20.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Commuting_RTP_20_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Commuting_RTP_20_165Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Commuting_RTP_20_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Commuting_RTP_20_175Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Commuting_RTP_20_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Commuting_RTP_20_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Commuting_RTP_20_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Commuting_RTP_20_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Commuting_RTP_20_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Commuting_RTP_20_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Commuting_RTP_20_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Commuting_RTP_20_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Digi_rise_RTP_81.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Digi_rise_RTP_81.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Digi_rise_RTP_81_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Digi_rise_RTP_81_165Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Digi_rise_RTP_81_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Digi_rise_RTP_81_175Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Digi_rise_RTP_81_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Digi_rise_RTP_81_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Digi_rise_RTP_81_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Digi_rise_RTP_81_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Digi_rise_RTP_81_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Digi_rise_RTP_81_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Digi_rise_RTP_81_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Digi_rise_RTP_81_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Dream_RTP_oplusos7_139.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Dream_RTP_oplusos7_139.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Dream_RTP_oplusos7_139_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Dream_RTP_oplusos7_139_165Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Dream_RTP_oplusos7_139_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Dream_RTP_oplusos7_139_175Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Dream_RTP_oplusos7_139_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Dream_RTP_oplusos7_139_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Dream_RTP_oplusos7_139_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Dream_RTP_oplusos7_139_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Dream_RTP_oplusos7_139_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Dream_RTP_oplusos7_139_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Dream_RTP_oplusos7_139_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Dream_RTP_oplusos7_139_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Electro_club_RTP_73.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Electro_club_RTP_73.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Electro_club_RTP_73_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Electro_club_RTP_73_165Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Electro_club_RTP_73_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Electro_club_RTP_73_175Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Electro_club_RTP_73_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Electro_club_RTP_73_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Electro_club_RTP_73_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Electro_club_RTP_73_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Electro_club_RTP_73_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Electro_club_RTP_73_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Firefly_RTP_22.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Firefly_RTP_22.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Firefly_RTP_22_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Firefly_RTP_22_165Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Firefly_RTP_22_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Firefly_RTP_22_175Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Firefly_RTP_22_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Firefly_RTP_22_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Firefly_RTP_22_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Firefly_RTP_22_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Firefly_RTP_22_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Firefly_RTP_22_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Firefly_RTP_22_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Firefly_RTP_22_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Fun_channel_RTP_oplusos7_129.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Fun_channel_RTP_oplusos7_129.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Fun_channel_RTP_oplusos7_129_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Fun_channel_RTP_oplusos7_129_165Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Fun_channel_RTP_oplusos7_129_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Fun_channel_RTP_oplusos7_129_175Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Fun_channel_RTP_oplusos7_129_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Fun_channel_RTP_oplusos7_129_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Fun_channel_RTP_oplusos7_129_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Fun_channel_RTP_oplusos7_129_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Fun_channel_RTP_oplusos7_129_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Fun_channel_RTP_oplusos7_129_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Fun_channel_RTP_oplusos7_129_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Fun_channel_RTP_oplusos7_129_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Gaze_RTP_24.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Gaze_RTP_24.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Gaze_RTP_24_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Gaze_RTP_24_165Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Gaze_RTP_24_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Gaze_RTP_24_175Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Gaze_RTP_24_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Gaze_RTP_24_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Gaze_RTP_24_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Gaze_RTP_24_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Gaze_RTP_24_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Gaze_RTP_24_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Gaze_RTP_24_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Gaze_RTP_24_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Glittering_channel_RTP_oplusos7_130.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Glittering_channel_RTP_oplusos7_130.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Glittering_channel_RTP_oplusos7_130_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Glittering_channel_RTP_oplusos7_130_165Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Glittering_channel_RTP_oplusos7_130_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Glittering_channel_RTP_oplusos7_130_175Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Glittering_channel_RTP_oplusos7_130_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Glittering_channel_RTP_oplusos7_130_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Glittering_channel_RTP_oplusos7_130_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Glittering_channel_RTP_oplusos7_130_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Glittering_channel_RTP_oplusos7_130_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Glittering_channel_RTP_oplusos7_130_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Glittering_channel_RTP_oplusos7_130_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Glittering_channel_RTP_oplusos7_130_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Granules_channel_RTP_9.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Granules_channel_RTP_9.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Granules_channel_RTP_9_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Granules_channel_RTP_9_165Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Granules_channel_RTP_9_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Granules_channel_RTP_9_175Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Granules_channel_RTP_9_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Granules_channel_RTP_9_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Granules_channel_RTP_9_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Granules_channel_RTP_9_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Granules_channel_RTP_9_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Granules_channel_RTP_9_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Granules_channel_RTP_9_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Granules_channel_RTP_9_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Harp_channel_RTP_oplusos7_131.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Harp_channel_RTP_oplusos7_131.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Harp_channel_RTP_oplusos7_131_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Harp_channel_RTP_oplusos7_131_165Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Harp_channel_RTP_oplusos7_131_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Harp_channel_RTP_oplusos7_131_175Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Harp_channel_RTP_oplusos7_131_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Harp_channel_RTP_oplusos7_131_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Harp_channel_RTP_oplusos7_131_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Harp_channel_RTP_oplusos7_131_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Harp_channel_RTP_oplusos7_131_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Harp_channel_RTP_oplusos7_131_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Harp_channel_RTP_oplusos7_131_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Harp_channel_RTP_oplusos7_131_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Hey_RTP_83.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Hey_RTP_83.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Hey_RTP_83_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Hey_RTP_83_165Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Hey_RTP_83_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Hey_RTP_83_175Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Hey_RTP_83_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Hey_RTP_83_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Hey_RTP_83_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Hey_RTP_83_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Hey_RTP_83_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Hey_RTP_83_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Hey_RTP_83_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Hey_RTP_83_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_House_club_RTP_76.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_House_club_RTP_76.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_House_club_RTP_76_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_House_club_RTP_76_165Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_House_club_RTP_76_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_House_club_RTP_76_175Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_House_club_RTP_76_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_House_club_RTP_76_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_House_club_RTP_76_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_House_club_RTP_76_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_House_club_RTP_76_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_House_club_RTP_76_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_House_club_RTP_76_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_House_club_RTP_76_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Impression_channel_RTP_11.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Impression_channel_RTP_11.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Info_RTP_85.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Info_RTP_85.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Info_RTP_85_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Info_RTP_85_165Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Info_RTP_85_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Info_RTP_85_175Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Info_RTP_85_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Info_RTP_85_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Info_RTP_85_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Info_RTP_85_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Info_RTP_85_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Info_RTP_85_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Info_RTP_85_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Info_RTP_85_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Ingenious_channel_RTP_12.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Ingenious_channel_RTP_12.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Ingenious_channel_RTP_12_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Ingenious_channel_RTP_12_165Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Ingenious_channel_RTP_12_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Ingenious_channel_RTP_12_175Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Ingenious_channel_RTP_12_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Ingenious_channel_RTP_12_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Ingenious_channel_RTP_12_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Ingenious_channel_RTP_12_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Ingenious_channel_RTP_12_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Ingenious_channel_RTP_12_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Ingenious_channel_RTP_12_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Ingenious_channel_RTP_12_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Instant_channel_RTP_2.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Instant_channel_RTP_2.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Instant_channel_RTP_2_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Instant_channel_RTP_2_165Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Instant_channel_RTP_2_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Instant_channel_RTP_2_175Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Instant_channel_RTP_2_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Instant_channel_RTP_2_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Instant_channel_RTP_2_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Instant_channel_RTP_2_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Instant_channel_RTP_2_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Instant_channel_RTP_2_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Instant_channel_RTP_2_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Instant_channel_RTP_2_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Jazz_dreamy_RTP_78.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Jazz_dreamy_RTP_78.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Jazz_dreamy_RTP_78_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Jazz_dreamy_RTP_78_165Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Jazz_dreamy_RTP_78_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Jazz_dreamy_RTP_78_175Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Jazz_dreamy_RTP_78_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Jazz_dreamy_RTP_78_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Jazz_dreamy_RTP_78_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Jazz_dreamy_RTP_78_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Jazz_dreamy_RTP_78_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Jazz_dreamy_RTP_78_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Jazz_dreamy_RTP_78_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Jazz_dreamy_RTP_78_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Jazz_funk_RTP_75.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Jazz_funk_RTP_75.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Jazz_funk_RTP_75_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Jazz_funk_RTP_75_165Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Jazz_funk_RTP_75_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Jazz_funk_RTP_75_175Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Jazz_funk_RTP_75_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Jazz_funk_RTP_75_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Jazz_funk_RTP_75_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Jazz_funk_RTP_75_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Jazz_funk_RTP_75_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Jazz_funk_RTP_75_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Jazz_funk_RTP_75_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Jazz_funk_RTP_75_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Jazz_modern_RTP_79.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Jazz_modern_RTP_79.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Jazz_modern_RTP_79_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Jazz_modern_RTP_79_165Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Jazz_modern_RTP_79_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Jazz_modern_RTP_79_175Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Jazz_modern_RTP_79_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Jazz_modern_RTP_79_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Jazz_modern_RTP_79_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Jazz_modern_RTP_79_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Jazz_modern_RTP_79_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Jazz_modern_RTP_79_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Jazz_modern_RTP_79_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Jazz_modern_RTP_79_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Joy_channel_RTP_13.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Joy_channel_RTP_13.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Joy_channel_RTP_13_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Joy_channel_RTP_13_165Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Joy_channel_RTP_13_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Joy_channel_RTP_13_175Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Joy_channel_RTP_13_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Joy_channel_RTP_13_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Joy_channel_RTP_13_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Joy_channel_RTP_13_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Joy_channel_RTP_13_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Joy_channel_RTP_13_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Joy_channel_RTP_13_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Joy_channel_RTP_13_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Joy_channel_RTP_oplusos7_141.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Joy_channel_RTP_oplusos7_141.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Joy_channel_RTP_oplusos7_141_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Joy_channel_RTP_oplusos7_141_165Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Joy_channel_RTP_oplusos7_141_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Joy_channel_RTP_oplusos7_141_175Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Joy_channel_RTP_oplusos7_141_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Joy_channel_RTP_oplusos7_141_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Joy_channel_RTP_oplusos7_141_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Joy_channel_RTP_oplusos7_141_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Joy_channel_RTP_oplusos7_141_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Joy_channel_RTP_oplusos7_141_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Joy_channel_RTP_oplusos7_141_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Joy_channel_RTP_oplusos7_141_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Lakeside_RTP_25.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Lakeside_RTP_25.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Lakeside_RTP_25_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Lakeside_RTP_25_165Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Lakeside_RTP_25_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Lakeside_RTP_25_175Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Lakeside_RTP_25_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Lakeside_RTP_25_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Lakeside_RTP_25_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Lakeside_RTP_25_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Lakeside_RTP_25_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Lakeside_RTP_25_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Lakeside_RTP_25_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Lakeside_RTP_25_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Lifestyle_RTP_26.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Lifestyle_RTP_26.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Long_for_RTP_oplusos7_136.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Long_for_RTP_oplusos7_136.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Long_for_RTP_oplusos7_136_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Long_for_RTP_oplusos7_136_165Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Long_for_RTP_oplusos7_136_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Long_for_RTP_oplusos7_136_175Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Long_for_RTP_oplusos7_136_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Long_for_RTP_oplusos7_136_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Long_for_RTP_oplusos7_136_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Long_for_RTP_oplusos7_136_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Long_for_RTP_oplusos7_136_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Long_for_RTP_oplusos7_136_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Long_for_RTP_oplusos7_136_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Long_for_RTP_oplusos7_136_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Memories_RTP_27.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Memories_RTP_27.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Memories_RTP_27_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Memories_RTP_27_165Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Memories_RTP_27_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Memories_RTP_27_175Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Memories_RTP_27_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Memories_RTP_27_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Memories_RTP_27_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Memories_RTP_27_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Memories_RTP_27_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Memories_RTP_27_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Memories_RTP_27_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Memories_RTP_27_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Messy_RTP_28.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Messy_RTP_28.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Messy_RTP_28_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Messy_RTP_28_165Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Messy_RTP_28_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Messy_RTP_28_175Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Messy_RTP_28_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Messy_RTP_28_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Messy_RTP_28_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Messy_RTP_28_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Messy_RTP_28_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Messy_RTP_28_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Messy_RTP_28_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Messy_RTP_28_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Miss_RTP_oplusos7_124.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Miss_RTP_oplusos7_124.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Miss_RTP_oplusos7_124_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Miss_RTP_oplusos7_124_165Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Miss_RTP_oplusos7_124_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Miss_RTP_oplusos7_124_175Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Miss_RTP_oplusos7_124_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Miss_RTP_oplusos7_124_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Miss_RTP_oplusos7_124_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Miss_RTP_oplusos7_124_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Miss_RTP_oplusos7_124_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Miss_RTP_oplusos7_124_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Miss_RTP_oplusos7_124_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Miss_RTP_oplusos7_124_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Music_channel_RTP_oplusos7_125.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Music_channel_RTP_oplusos7_125.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Music_channel_RTP_oplusos7_125_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Music_channel_RTP_oplusos7_125_165Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Music_channel_RTP_oplusos7_125_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Music_channel_RTP_oplusos7_125_175Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Music_channel_RTP_oplusos7_125_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Music_channel_RTP_oplusos7_125_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Music_channel_RTP_oplusos7_125_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Music_channel_RTP_oplusos7_125_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Music_channel_RTP_oplusos7_125_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Music_channel_RTP_oplusos7_125_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Music_channel_RTP_oplusos7_125_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Music_channel_RTP_oplusos7_125_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Night_RTP_29.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Night_RTP_29.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Night_RTP_29_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Night_RTP_29_165Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Night_RTP_29_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Night_RTP_29_175Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Night_RTP_29_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Night_RTP_29_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Night_RTP_29_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Night_RTP_29_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Night_RTP_29_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Night_RTP_29_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Night_RTP_29_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Night_RTP_29_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Opop_short_RTP_87.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Opop_short_RTP_87.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Opop_short_RTP_87_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Opop_short_RTP_87_165Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Opop_short_RTP_87_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Opop_short_RTP_87_175Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Opop_short_RTP_87_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Opop_short_RTP_87_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Opop_short_RTP_87_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Opop_short_RTP_87_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Opop_short_RTP_87_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Opop_short_RTP_87_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Opop_short_RTP_87_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Opop_short_RTP_87_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Overtone_channel_RTP_oplusos7_132.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Overtone_channel_RTP_oplusos7_132.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Overtone_channel_RTP_oplusos7_132_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Overtone_channel_RTP_oplusos7_132_165Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Overtone_channel_RTP_oplusos7_132_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Overtone_channel_RTP_oplusos7_132_175Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Overtone_channel_RTP_oplusos7_132_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Overtone_channel_RTP_oplusos7_132_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Overtone_channel_RTP_oplusos7_132_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Overtone_channel_RTP_oplusos7_132_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Overtone_channel_RTP_oplusos7_132_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Overtone_channel_RTP_oplusos7_132_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Overtone_channel_RTP_oplusos7_132_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Overtone_channel_RTP_oplusos7_132_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Passionate_Dance_RTP_30.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Passionate_Dance_RTP_30.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Passionate_Dance_RTP_30_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Passionate_Dance_RTP_30_165Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Passionate_Dance_RTP_30_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Passionate_Dance_RTP_30_175Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Passionate_Dance_RTP_30_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Passionate_Dance_RTP_30_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Passionate_Dance_RTP_30_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Passionate_Dance_RTP_30_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Passionate_Dance_RTP_30_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Passionate_Dance_RTP_30_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Passionate_Dance_RTP_30_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Passionate_Dance_RTP_30_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Percussion_channel_RTP_oplusos7_126.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Percussion_channel_RTP_oplusos7_126.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Percussion_channel_RTP_oplusos7_126_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Percussion_channel_RTP_oplusos7_126_165Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Percussion_channel_RTP_oplusos7_126_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Percussion_channel_RTP_oplusos7_126_175Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Percussion_channel_RTP_oplusos7_126_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Percussion_channel_RTP_oplusos7_126_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Percussion_channel_RTP_oplusos7_126_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Percussion_channel_RTP_oplusos7_126_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Percussion_channel_RTP_oplusos7_126_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Percussion_channel_RTP_oplusos7_126_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Percussion_channel_RTP_oplusos7_126_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Percussion_channel_RTP_oplusos7_126_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Playground_RTP_31.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Playground_RTP_31.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Playground_RTP_31_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Playground_RTP_31_165Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Playground_RTP_31_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Playground_RTP_31_175Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Playground_RTP_31_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Playground_RTP_31_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Playground_RTP_31_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Playground_RTP_31_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Playground_RTP_31_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Playground_RTP_31_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Playground_RTP_31_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Playground_RTP_31_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Pure_RTP_49.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Pure_RTP_49.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Pure_RTP_49_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Pure_RTP_49_165Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Pure_RTP_49_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Pure_RTP_49_175Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Pure_RTP_49_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Pure_RTP_49_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Pure_RTP_49_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Pure_RTP_49_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Pure_RTP_49_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Pure_RTP_49_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Pure_RTP_49_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Pure_RTP_49_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Receive_channel_RTP_15.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Receive_channel_RTP_15.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Receive_channel_RTP_15_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Receive_channel_RTP_15_165Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Receive_channel_RTP_15_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Receive_channel_RTP_15_175Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Receive_channel_RTP_15_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Receive_channel_RTP_15_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Receive_channel_RTP_15_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Receive_channel_RTP_15_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Receive_channel_RTP_15_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Receive_channel_RTP_15_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Receive_channel_RTP_15_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Receive_channel_RTP_15_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Relax_RTP_32.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Relax_RTP_32.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Relax_RTP_32_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Relax_RTP_32_165Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Relax_RTP_32_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Relax_RTP_32_175Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Relax_RTP_32_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Relax_RTP_32_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Relax_RTP_32_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Relax_RTP_32_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Relax_RTP_32_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Relax_RTP_32_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Relax_RTP_32_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Relax_RTP_32_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Relax_RTP_oplusos7_140.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Relax_RTP_oplusos7_140.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Relax_RTP_oplusos7_140_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Relax_RTP_oplusos7_140_165Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Relax_RTP_oplusos7_140_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Relax_RTP_oplusos7_140_175Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Relax_RTP_oplusos7_140_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Relax_RTP_oplusos7_140_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Relax_RTP_oplusos7_140_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Relax_RTP_oplusos7_140_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Relax_RTP_oplusos7_140_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Relax_RTP_oplusos7_140_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Relax_RTP_oplusos7_140_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Relax_RTP_oplusos7_140_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Reminiscence_RTP_33.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Reminiscence_RTP_33.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Ripple_channel_RTP_oplusos7_127.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Ripple_channel_RTP_oplusos7_127.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Ripple_channel_RTP_oplusos7_127_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Ripple_channel_RTP_oplusos7_127_165Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Ripple_channel_RTP_oplusos7_127_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Ripple_channel_RTP_oplusos7_127_175Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Ripple_channel_RTP_oplusos7_127_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Ripple_channel_RTP_oplusos7_127_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Ripple_channel_RTP_oplusos7_127_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Ripple_channel_RTP_oplusos7_127_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Ripple_channel_RTP_oplusos7_127_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Ripple_channel_RTP_oplusos7_127_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Ripple_channel_RTP_oplusos7_127_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Ripple_channel_RTP_oplusos7_127_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Romantic_RTP_oplusos7_137.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Romantic_RTP_oplusos7_137.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Romantic_RTP_oplusos7_137_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Romantic_RTP_oplusos7_137_165Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Romantic_RTP_oplusos7_137_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Romantic_RTP_oplusos7_137_175Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Romantic_RTP_oplusos7_137_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Romantic_RTP_oplusos7_137_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Romantic_RTP_oplusos7_137_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Romantic_RTP_oplusos7_137_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Romantic_RTP_oplusos7_137_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Romantic_RTP_oplusos7_137_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Romantic_RTP_oplusos7_137_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Romantic_RTP_oplusos7_137_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Scenic_RTP_121.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Scenic_RTP_121.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Scenic_RTP_121_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Scenic_RTP_121_165Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Scenic_RTP_121_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Scenic_RTP_121_175Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Scenic_RTP_121_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Scenic_RTP_121_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Scenic_RTP_121_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Scenic_RTP_121_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Scenic_RTP_121_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Scenic_RTP_121_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Scenic_RTP_121_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Scenic_RTP_121_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Seine_past_RTP_oplusos7_134.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Seine_past_RTP_oplusos7_134.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Seine_past_RTP_oplusos7_134_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Seine_past_RTP_oplusos7_134_165Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Seine_past_RTP_oplusos7_134_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Seine_past_RTP_oplusos7_134_175Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Seine_past_RTP_oplusos7_134_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Seine_past_RTP_oplusos7_134_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Seine_past_RTP_oplusos7_134_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Seine_past_RTP_oplusos7_134_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Seine_past_RTP_oplusos7_134_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Seine_past_RTP_oplusos7_134_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Seine_past_RTP_oplusos7_134_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Seine_past_RTP_oplusos7_134_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Silence_From_Afar_RTP_34.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Silence_From_Afar_RTP_34.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Silence_From_Afar_RTP_34_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Silence_From_Afar_RTP_34_165Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Silence_From_Afar_RTP_34_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Silence_From_Afar_RTP_34_175Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Silence_From_Afar_RTP_34_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Silence_From_Afar_RTP_34_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Silence_From_Afar_RTP_34_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Silence_From_Afar_RTP_34_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Silence_From_Afar_RTP_34_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Silence_From_Afar_RTP_34_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Silence_From_Afar_RTP_34_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Silence_From_Afar_RTP_34_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Silence_RTP_35.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Silence_RTP_35.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Silence_RTP_35_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Silence_RTP_35_165Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Silence_RTP_35_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Silence_RTP_35_175Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Silence_RTP_35_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Silence_RTP_35_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Silence_RTP_35_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Silence_RTP_35_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Silence_RTP_35_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Silence_RTP_35_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Silence_RTP_35_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Silence_RTP_35_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Simple_channel_RTP_oplusos7_133.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Simple_channel_RTP_oplusos7_133.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Simple_channel_RTP_oplusos7_133_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Simple_channel_RTP_oplusos7_133_165Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Simple_channel_RTP_oplusos7_133_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Simple_channel_RTP_oplusos7_133_175Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Simple_channel_RTP_oplusos7_133_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Simple_channel_RTP_oplusos7_133_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Simple_channel_RTP_oplusos7_133_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Simple_channel_RTP_oplusos7_133_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Simple_channel_RTP_oplusos7_133_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Simple_channel_RTP_oplusos7_133_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Simple_channel_RTP_oplusos7_133_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Simple_channel_RTP_oplusos7_133_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Splash_channel_RTP_16.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Splash_channel_RTP_16.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Splash_channel_RTP_16_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Splash_channel_RTP_16_165Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Splash_channel_RTP_16_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Splash_channel_RTP_16_175Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Splash_channel_RTP_16_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Splash_channel_RTP_16_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Splash_channel_RTP_16_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Splash_channel_RTP_16_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Splash_channel_RTP_16_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Splash_channel_RTP_16_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Splash_channel_RTP_16_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Splash_channel_RTP_16_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Stars_RTP_36.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Stars_RTP_36.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Stars_RTP_36_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Stars_RTP_36_165Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Stars_RTP_36_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Stars_RTP_36_175Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Stars_RTP_36_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Stars_RTP_36_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Stars_RTP_36_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Stars_RTP_36_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Stars_RTP_36_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Stars_RTP_36_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Stars_RTP_36_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Stars_RTP_36_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Summer_RTP_37.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Summer_RTP_37.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Summer_RTP_37_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Summer_RTP_37_165Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Summer_RTP_37_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Summer_RTP_37_175Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Summer_RTP_37_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Summer_RTP_37_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Summer_RTP_37_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Summer_RTP_37_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Summer_RTP_37_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Summer_RTP_37_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Summer_RTP_37_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Summer_RTP_37_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Temple_morning_RTP_71.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Temple_morning_RTP_71.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Temple_morning_RTP_71_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Temple_morning_RTP_71_165Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Temple_morning_RTP_71_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Temple_morning_RTP_71_175Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Temple_morning_RTP_71_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Temple_morning_RTP_71_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Temple_morning_RTP_71_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Temple_morning_RTP_71_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Temple_morning_RTP_71_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Temple_morning_RTP_71_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Temple_morning_RTP_71_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Temple_morning_RTP_71_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Tip_top_RTP_86.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Tip_top_RTP_86.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Tip_top_RTP_86_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Tip_top_RTP_86_165Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Tip_top_RTP_86_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Tip_top_RTP_86_175Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Tip_top_RTP_86_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Tip_top_RTP_86_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Tip_top_RTP_86_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Tip_top_RTP_86_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Tip_top_RTP_86_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Tip_top_RTP_86_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Tip_top_RTP_86_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Tip_top_RTP_86_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Tone_round_RTP_80.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Tone_round_RTP_80.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Tone_round_RTP_80_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Tone_round_RTP_80_165Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Tone_round_RTP_80_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Tone_round_RTP_80_175Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Tone_round_RTP_80_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Tone_round_RTP_80_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Tone_round_RTP_80_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Tone_round_RTP_80_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Tone_round_RTP_80_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Tone_round_RTP_80_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Tone_round_RTP_80_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Tone_round_RTP_80_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Toys_RTP_38.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Toys_RTP_38.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Toys_RTP_38_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Toys_RTP_38_165Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Toys_RTP_38_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Toys_RTP_38_175Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Toys_RTP_38_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Toys_RTP_38_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Toys_RTP_38_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Toys_RTP_38_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Toys_RTP_38_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Toys_RTP_38_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Toys_RTP_38_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Toys_RTP_38_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Vacation_RTP_74.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Vacation_RTP_74.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Vacation_RTP_74_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Vacation_RTP_74_165Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Vacation_RTP_74_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Vacation_RTP_74_175Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Vacation_RTP_74_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Vacation_RTP_74_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Vacation_RTP_74_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Vacation_RTP_74_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Vacation_RTP_74_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Vacation_RTP_74_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Vacation_RTP_74_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Vacation_RTP_74_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Vision_RTP_40.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Vision_RTP_40.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Vision_RTP_40_170.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Vision_RTP_40_170.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Water_cicidas_72_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Water_cicidas_72_RTP.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Water_cicidas_72_RTP_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Water_cicidas_72_RTP_165Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Water_cicidas_72_RTP_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Water_cicidas_72_RTP_175Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Water_cicidas_72_RTP_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Water_cicidas_72_RTP_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Water_cicidas_72_RTP_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Water_cicidas_72_RTP_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Water_cicidas_72_RTP_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Water_cicidas_72_RTP_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Water_cicidas_72_RTP_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Water_cicidas_72_RTP_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Wood_phone_RTP_82.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Wood_phone_RTP_82.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Wood_phone_RTP_82_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Wood_phone_RTP_82_165Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Wood_phone_RTP_82_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Wood_phone_RTP_82_175Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Wood_phone_RTP_82_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Wood_phone_RTP_82_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Wood_phone_RTP_82_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Wood_phone_RTP_82_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Wood_phone_RTP_82_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Wood_phone_RTP_82_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Wood_phone_RTP_82_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Wood_phone_RTP_82_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Zanza_RTP_84.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Zanza_RTP_84.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Zanza_RTP_84_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Zanza_RTP_84_165Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Zanza_RTP_84_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Zanza_RTP_84_175Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Zanza_RTP_84_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Zanza_RTP_84_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Zanza_RTP_84_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Zanza_RTP_84_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Zanza_RTP_84_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Zanza_RTP_84_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_Zanza_RTP_84_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Zanza_RTP_84_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_bowl_bells_RTP_88.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_bowl_bells_RTP_88.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_bowl_bells_RTP_88_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_bowl_bells_RTP_88_165Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_bowl_bells_RTP_88_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_bowl_bells_RTP_88_175Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_bowl_bells_RTP_88_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_bowl_bells_RTP_88_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_bowl_bells_RTP_88_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_bowl_bells_RTP_88_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_bowl_bells_RTP_88_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_bowl_bells_RTP_88_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_bowl_bells_RTP_88_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_bowl_bells_RTP_88_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_breath_simulation_RTP_118.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_breath_simulation_RTP_118.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_breath_simulation_RTP_118_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_breath_simulation_RTP_118_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_breath_simulation_RTP_118_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_breath_simulation_RTP_118_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_breath_simulation_RTP_118_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_breath_simulation_RTP_118_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_breath_simulation_RTP_118_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_breath_simulation_RTP_118_237Hz.bin \
     vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_charging_simulation_RTP_108.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_charging_simulation_RTP_108.bin \
     vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_charging_simulation_RTP_108_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_charging_simulation_RTP_108_226Hz.bin \
     vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_charging_simulation_RTP_108_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_charging_simulation_RTP_108_230Hz.bin \
     vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_charging_simulation_RTP_108_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_charging_simulation_RTP_108_234Hz.bin \
     vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_charging_simulation_RTP_108_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_charging_simulation_RTP_108_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_clock_channel_RTP_43.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_clock_channel_RTP_43.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_clock_channel_RTP_43_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_clock_channel_RTP_43_165Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_clock_channel_RTP_43_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_clock_channel_RTP_43_175Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_clock_channel_RTP_43_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_clock_channel_RTP_43_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_clock_channel_RTP_43_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_clock_channel_RTP_43_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_clock_channel_RTP_43_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_clock_channel_RTP_43_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_clock_channel_RTP_43_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_clock_channel_RTP_43_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_cut_channel_RTP_42.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_cut_channel_RTP_42.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_cut_channel_RTP_42_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_cut_channel_RTP_42_165Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_cut_channel_RTP_42_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_cut_channel_RTP_42_175Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_cut_channel_RTP_42_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_cut_channel_RTP_42_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_cut_channel_RTP_42_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_cut_channel_RTP_42_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_cut_channel_RTP_42_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_cut_channel_RTP_42_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_cut_channel_RTP_42_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_cut_channel_RTP_42_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_desk_7_RTP_54.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_desk_7_RTP_54.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_desk_7_RTP_54_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_desk_7_RTP_54_165Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_desk_7_RTP_54_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_desk_7_RTP_54_175Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_desk_7_RTP_54_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_desk_7_RTP_54_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_desk_7_RTP_54_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_desk_7_RTP_54_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_desk_7_RTP_54_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_desk_7_RTP_54_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_desk_7_RTP_54_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_desk_7_RTP_54_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_fingerprint_effect1_RTP_110.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect1_RTP_110.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_fingerprint_effect1_RTP_110_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect1_RTP_110_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_fingerprint_effect1_RTP_110_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect1_RTP_110_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_fingerprint_effect1_RTP_110_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect1_RTP_110_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_fingerprint_effect1_RTP_110_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect1_RTP_110_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_fingerprint_effect2_RTP_111.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect2_RTP_111.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_fingerprint_effect2_RTP_111_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect2_RTP_111_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_fingerprint_effect2_RTP_111_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect2_RTP_111_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_fingerprint_effect2_RTP_111_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect2_RTP_111_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_fingerprint_effect2_RTP_111_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect2_RTP_111_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_fingerprint_effect3_RTP_112.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect3_RTP_112.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_fingerprint_effect3_RTP_112_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect3_RTP_112_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_fingerprint_effect3_RTP_112_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect3_RTP_112_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_fingerprint_effect3_RTP_112_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect3_RTP_112_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_fingerprint_effect3_RTP_112_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect3_RTP_112_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_fingerprint_effect4_RTP_113.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect4_RTP_113.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_fingerprint_effect4_RTP_113_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect4_RTP_113_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_fingerprint_effect4_RTP_113_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect4_RTP_113_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_fingerprint_effect4_RTP_113_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect4_RTP_113_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_fingerprint_effect4_RTP_113_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect4_RTP_113_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_fingerprint_effect5_RTP_114.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect5_RTP_114.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_fingerprint_effect5_RTP_114_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect5_RTP_114_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_fingerprint_effect5_RTP_114_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect5_RTP_114_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_fingerprint_effect5_RTP_114_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect5_RTP_114_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_fingerprint_effect5_RTP_114_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect5_RTP_114_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_fingerprint_effect6_RTP_115.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect6_RTP_115.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_fingerprint_effect6_RTP_115_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect6_RTP_115_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_fingerprint_effect6_RTP_115_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect6_RTP_115_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_fingerprint_effect6_RTP_115_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect6_RTP_115_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_fingerprint_effect6_RTP_115_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect6_RTP_115_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_fingerprint_effect7_RTP_116.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect7_RTP_116.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_fingerprint_effect7_RTP_116_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect7_RTP_116_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_fingerprint_effect7_RTP_116_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect7_RTP_116_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_fingerprint_effect7_RTP_116_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect7_RTP_116_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_fingerprint_effect7_RTP_116_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect7_RTP_116_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_fingerprint_effect8_RTP_117.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect8_RTP_117.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_fingerprint_effect8_RTP_117_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect8_RTP_117_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_fingerprint_effect8_RTP_117_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect8_RTP_117_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_fingerprint_effect8_RTP_117_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect8_RTP_117_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_fingerprint_effect8_RTP_117_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect8_RTP_117_237Hz.bin \
     vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_haptic.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_haptic.bin \
     vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_haptic_166.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_haptic_166.bin \
     vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_haptic_168.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_haptic_168.bin \
@@ -720,212 +568,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_haptic_174.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_haptic_174.bin \
     vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_haptic_235.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_haptic_235.bin \
     vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_haptic_235_19161.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_haptic_235_19161.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_160Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_160Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_162Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_162Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_164Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_164Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_166Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_166Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_168Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_168Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_170Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_170Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_172Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_172Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_174Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_174Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_176Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_176Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_178Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_178Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_180Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_180Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_225Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_225Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_227Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_227Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_228Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_228Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_229Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_229Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_231Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_231Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_232Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_232Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_233Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_233Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_235Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_235Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_honor_fisrt_kill_RTP_60.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_fisrt_kill_RTP_60.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_honor_fisrt_kill_RTP_60_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_fisrt_kill_RTP_60_165Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_honor_fisrt_kill_RTP_60_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_fisrt_kill_RTP_60_175Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_honor_fisrt_kill_RTP_60_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_fisrt_kill_RTP_60_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_honor_fisrt_kill_RTP_60_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_fisrt_kill_RTP_60_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_honor_fisrt_kill_RTP_60_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_fisrt_kill_RTP_60_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_honor_fisrt_kill_RTP_60_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_fisrt_kill_RTP_60_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_honor_five_kill_RTP_64.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_five_kill_RTP_64.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_honor_five_kill_RTP_64_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_five_kill_RTP_64_165Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_honor_five_kill_RTP_64_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_five_kill_RTP_64_175Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_honor_five_kill_RTP_64_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_five_kill_RTP_64_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_honor_five_kill_RTP_64_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_five_kill_RTP_64_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_honor_five_kill_RTP_64_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_five_kill_RTP_64_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_honor_five_kill_RTP_64_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_five_kill_RTP_64_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_honor_four_continu_kill_RTP_66.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_four_continu_kill_RTP_66.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_honor_four_continu_kill_RTP_66_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_four_continu_kill_RTP_66_165Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_honor_four_continu_kill_RTP_66_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_four_continu_kill_RTP_66_175Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_honor_four_continu_kill_RTP_66_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_four_continu_kill_RTP_66_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_honor_four_continu_kill_RTP_66_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_four_continu_kill_RTP_66_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_honor_four_continu_kill_RTP_66_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_four_continu_kill_RTP_66_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_honor_four_continu_kill_RTP_66_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_four_continu_kill_RTP_66_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_honor_four_kill_RTP_63.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_four_kill_RTP_63.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_honor_four_kill_RTP_63_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_four_kill_RTP_63_165Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_honor_four_kill_RTP_63_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_four_kill_RTP_63_175Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_honor_four_kill_RTP_63_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_four_kill_RTP_63_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_honor_four_kill_RTP_63_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_four_kill_RTP_63_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_honor_four_kill_RTP_63_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_four_kill_RTP_63_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_honor_four_kill_RTP_63_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_four_kill_RTP_63_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_honor_lengendary_RTP_69.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_lengendary_RTP_69.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_honor_lengendary_RTP_69_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_lengendary_RTP_69_165Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_honor_lengendary_RTP_69_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_lengendary_RTP_69_175Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_honor_lengendary_RTP_69_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_lengendary_RTP_69_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_honor_lengendary_RTP_69_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_lengendary_RTP_69_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_honor_lengendary_RTP_69_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_lengendary_RTP_69_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_honor_lengendary_RTP_69_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_lengendary_RTP_69_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_honor_thousands_kill_RTP_68.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_thousands_kill_RTP_68.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_honor_thousands_kill_RTP_68_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_thousands_kill_RTP_68_165Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_honor_thousands_kill_RTP_68_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_thousands_kill_RTP_68_175Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_honor_thousands_kill_RTP_68_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_thousands_kill_RTP_68_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_honor_thousands_kill_RTP_68_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_thousands_kill_RTP_68_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_honor_thousands_kill_RTP_68_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_thousands_kill_RTP_68_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_honor_thousands_kill_RTP_68_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_thousands_kill_RTP_68_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_honor_three_continu_kill_RTP_65.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_three_continu_kill_RTP_65.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_honor_three_continu_kill_RTP_65_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_three_continu_kill_RTP_65_165Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_honor_three_continu_kill_RTP_65_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_three_continu_kill_RTP_65_175Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_honor_three_continu_kill_RTP_65_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_three_continu_kill_RTP_65_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_honor_three_continu_kill_RTP_65_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_three_continu_kill_RTP_65_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_honor_three_continu_kill_RTP_65_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_three_continu_kill_RTP_65_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_honor_three_continu_kill_RTP_65_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_three_continu_kill_RTP_65_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_honor_three_kill_RTP_62.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_three_kill_RTP_62.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_honor_three_kill_RTP_62_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_three_kill_RTP_62_165Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_honor_three_kill_RTP_62_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_three_kill_RTP_62_175Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_honor_three_kill_RTP_62_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_three_kill_RTP_62_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_honor_three_kill_RTP_62_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_three_kill_RTP_62_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_honor_three_kill_RTP_62_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_three_kill_RTP_62_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_honor_three_kill_RTP_62_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_three_kill_RTP_62_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_honor_two_kill_RTP_61.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_two_kill_RTP_61.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_honor_two_kill_RTP_61_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_two_kill_RTP_61_165Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_honor_two_kill_RTP_61_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_two_kill_RTP_61_175Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_honor_two_kill_RTP_61_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_two_kill_RTP_61_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_honor_two_kill_RTP_61_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_two_kill_RTP_61_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_honor_two_kill_RTP_61_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_two_kill_RTP_61_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_honor_two_kill_RTP_61_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_two_kill_RTP_61_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_honor_unstoppable_RTP_67.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_unstoppable_RTP_67.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_honor_unstoppable_RTP_67_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_unstoppable_RTP_67_165Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_honor_unstoppable_RTP_67_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_unstoppable_RTP_67_175Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_honor_unstoppable_RTP_67_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_unstoppable_RTP_67_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_honor_unstoppable_RTP_67_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_unstoppable_RTP_67_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_honor_unstoppable_RTP_67_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_unstoppable_RTP_67_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_honor_unstoppable_RTP_67_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_unstoppable_RTP_67_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_jumpy_RTP_89.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_jumpy_RTP_89.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_jumpy_RTP_89_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_jumpy_RTP_89_165Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_jumpy_RTP_89_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_jumpy_RTP_89_175Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_jumpy_RTP_89_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_jumpy_RTP_89_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_jumpy_RTP_89_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_jumpy_RTP_89_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_jumpy_RTP_89_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_jumpy_RTP_89_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_jumpy_RTP_89_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_jumpy_RTP_89_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_kill_program_RTP_47.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_kill_program_RTP_47.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_kill_program_RTP_47_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_kill_program_RTP_47_165Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_kill_program_RTP_47_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_kill_program_RTP_47_175Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_kill_program_RTP_47_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_kill_program_RTP_47_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_kill_program_RTP_47_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_kill_program_RTP_47_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_kill_program_RTP_47_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_kill_program_RTP_47_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_kill_program_RTP_47_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_kill_program_RTP_47_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_listen_pop_53.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_listen_pop_53.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_listen_pop_53_235Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_listen_pop_53_235Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_long_sound_channel_RTP_44.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_long_sound_channel_RTP_44.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_long_sound_channel_RTP_44_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_long_sound_channel_RTP_44_165Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_long_sound_channel_RTP_44_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_long_sound_channel_RTP_44_175Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_long_sound_channel_RTP_44_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_long_sound_channel_RTP_44_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_long_sound_channel_RTP_44_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_long_sound_channel_RTP_44_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_long_sound_channel_RTP_44_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_long_sound_channel_RTP_44_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_long_sound_channel_RTP_44_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_long_sound_channel_RTP_44_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_nfc_10_RTP_55.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_nfc_10_RTP_55.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_nfc_10_RTP_55_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_nfc_10_RTP_55_165Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_nfc_10_RTP_55_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_nfc_10_RTP_55_175Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_nfc_10_RTP_55_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_nfc_10_RTP_55_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_nfc_10_RTP_55_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_nfc_10_RTP_55_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_nfc_10_RTP_55_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_nfc_10_RTP_55_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_nfc_10_RTP_55_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_nfc_10_RTP_55_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_old_steady_test_RTP_52_160Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_old_steady_test_RTP_52_160Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_old_steady_test_RTP_52_162Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_old_steady_test_RTP_52_162Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_old_steady_test_RTP_52_164Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_old_steady_test_RTP_52_164Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_old_steady_test_RTP_52_166Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_old_steady_test_RTP_52_166Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_old_steady_test_RTP_52_168Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_old_steady_test_RTP_52_168Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_old_steady_test_RTP_52_170Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_old_steady_test_RTP_52_170Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_old_steady_test_RTP_52_172Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_old_steady_test_RTP_52_172Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_old_steady_test_RTP_52_174Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_old_steady_test_RTP_52_174Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_old_steady_test_RTP_52_176Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_old_steady_test_RTP_52_176Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_old_steady_test_RTP_52_178Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_old_steady_test_RTP_52_178Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_old_steady_test_RTP_52_180Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_old_steady_test_RTP_52_180Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_old_steady_test_RTP_52_225Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_old_steady_test_RTP_52_225Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_old_steady_test_RTP_52_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_old_steady_test_RTP_52_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_old_steady_test_RTP_52_227Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_old_steady_test_RTP_52_227Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_old_steady_test_RTP_52_228Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_old_steady_test_RTP_52_228Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_old_steady_test_RTP_52_229Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_old_steady_test_RTP_52_229Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_old_steady_test_RTP_52_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_old_steady_test_RTP_52_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_old_steady_test_RTP_52_231Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_old_steady_test_RTP_52_231Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_old_steady_test_RTP_52_232Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_old_steady_test_RTP_52_232Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_old_steady_test_RTP_52_233Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_old_steady_test_RTP_52_233Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_old_steady_test_RTP_52_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_old_steady_test_RTP_52_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_old_steady_test_RTP_52_235Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_old_steady_test_RTP_52_235Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_realme_gt_RTP_170_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_realme_gt_RTP_170_165Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_realme_gt_RTP_170_170Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_realme_gt_RTP_170_170Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_realme_gt_RTP_170_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_realme_gt_RTP_170_175Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_realme_its_realme_RTP_161_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_realme_its_realme_RTP_161_165Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_realme_its_realme_RTP_161_170Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_realme_its_realme_RTP_161_170Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_realme_its_realme_RTP_161_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_realme_its_realme_RTP_161_175Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_realme_its_realme_RTP_161_235Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_realme_its_realme_RTP_161_235Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_realme_jingle_RTP_163_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_realme_jingle_RTP_163_165Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_realme_jingle_RTP_163_170Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_realme_jingle_RTP_163_170Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_realme_jingle_RTP_163_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_realme_jingle_RTP_163_175Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_realme_jingle_RTP_163_235Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_realme_jingle_RTP_163_235Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_realme_tune_RTP_162_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_realme_tune_RTP_162_165Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_realme_tune_RTP_162_170Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_realme_tune_RTP_162_170Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_realme_tune_RTP_162_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_realme_tune_RTP_162_175Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_realme_tune_RTP_162_235Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_realme_tune_RTP_162_235Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_reserved_108.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_reserved_108.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_reserved_109.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_reserved_109.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_rtp.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_rtp.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_rtp_lighthouse.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_rtp_lighthouse.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_rtp_silk.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_rtp_silk.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_short_channel_RTP_45.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_short_channel_RTP_45.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_short_channel_RTP_45_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_short_channel_RTP_45_165Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_short_channel_RTP_45_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_short_channel_RTP_45_175Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_short_channel_RTP_45_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_short_channel_RTP_45_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_short_channel_RTP_45_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_short_channel_RTP_45_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_short_channel_RTP_45_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_short_channel_RTP_45_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_short_channel_RTP_45_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_short_channel_RTP_45_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_soldier_fifth_kill_RTP_104.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_fifth_kill_RTP_104.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_soldier_fifth_kill_RTP_104_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_fifth_kill_RTP_104_165Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_soldier_fifth_kill_RTP_104_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_fifth_kill_RTP_104_175Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_soldier_fifth_kill_RTP_104_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_fifth_kill_RTP_104_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_soldier_fifth_kill_RTP_104_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_fifth_kill_RTP_104_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_soldier_fifth_kill_RTP_104_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_fifth_kill_RTP_104_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_soldier_fifth_kill_RTP_104_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_fifth_kill_RTP_104_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_soldier_first_kill_RTP_100.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_first_kill_RTP_100.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_soldier_first_kill_RTP_100_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_first_kill_RTP_100_165Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_soldier_first_kill_RTP_100_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_first_kill_RTP_100_175Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_soldier_first_kill_RTP_100_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_first_kill_RTP_100_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_soldier_first_kill_RTP_100_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_first_kill_RTP_100_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_soldier_first_kill_RTP_100_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_first_kill_RTP_100_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_soldier_first_kill_RTP_100_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_first_kill_RTP_100_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_soldier_fourth_kill_RTP_103.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_fourth_kill_RTP_103.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_soldier_fourth_kill_RTP_103_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_fourth_kill_RTP_103_165Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_soldier_fourth_kill_RTP_103_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_fourth_kill_RTP_103_175Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_soldier_fourth_kill_RTP_103_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_fourth_kill_RTP_103_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_soldier_fourth_kill_RTP_103_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_fourth_kill_RTP_103_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_soldier_fourth_kill_RTP_103_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_fourth_kill_RTP_103_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_soldier_fourth_kill_RTP_103_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_fourth_kill_RTP_103_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_soldier_second_kill_RTP_101.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_second_kill_RTP_101.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_soldier_second_kill_RTP_101_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_second_kill_RTP_101_165Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_soldier_second_kill_RTP_101_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_second_kill_RTP_101_175Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_soldier_second_kill_RTP_101_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_second_kill_RTP_101_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_soldier_second_kill_RTP_101_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_second_kill_RTP_101_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_soldier_second_kill_RTP_101_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_second_kill_RTP_101_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_soldier_second_kill_RTP_101_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_second_kill_RTP_101_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_soldier_third_kill_RTP_102.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_third_kill_RTP_102.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_soldier_third_kill_RTP_102_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_third_kill_RTP_102_165Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_soldier_third_kill_RTP_102_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_third_kill_RTP_102_175Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_soldier_third_kill_RTP_102_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_third_kill_RTP_102_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_soldier_third_kill_RTP_102_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_third_kill_RTP_102_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_soldier_third_kill_RTP_102_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_third_kill_RTP_102_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_soldier_third_kill_RTP_102_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_third_kill_RTP_102_237Hz.bin \
     vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_stepable_regulate_RTP_105.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_stepable_regulate_RTP_105.bin \
     vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_stepable_regulate_RTP_105_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_stepable_regulate_RTP_105_226Hz.bin \
     vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_stepable_regulate_RTP_105_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_stepable_regulate_RTP_105_230Hz.bin \
@@ -936,100 +578,8 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_strength_level_bar_edge_RTP_107_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_strength_level_bar_edge_RTP_107_230Hz.bin \
     vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_strength_level_bar_edge_RTP_107_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_strength_level_bar_edge_RTP_107_234Hz.bin \
     vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_strength_level_bar_edge_RTP_107_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_strength_level_bar_edge_RTP_107_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_temple_tone_RTP_77.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_temple_tone_RTP_77.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_temple_tone_RTP_77_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_temple_tone_RTP_77_165Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_temple_tone_RTP_77_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_temple_tone_RTP_77_175Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_temple_tone_RTP_77_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_temple_tone_RTP_77_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_temple_tone_RTP_77_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_temple_tone_RTP_77_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_temple_tone_RTP_77_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_temple_tone_RTP_77_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_temple_tone_RTP_77_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_temple_tone_RTP_77_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_two_error_remaind_RTP_46.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_two_error_remaind_RTP_46.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_two_error_remaind_RTP_46_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_two_error_remaind_RTP_46_165Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_two_error_remaind_RTP_46_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_two_error_remaind_RTP_46_175Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_two_error_remaind_RTP_46_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_two_error_remaind_RTP_46_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_two_error_remaind_RTP_46_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_two_error_remaind_RTP_46_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_two_error_remaind_RTP_46_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_two_error_remaind_RTP_46_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_two_error_remaind_RTP_46_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_two_error_remaind_RTP_46_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_vibrator_remain_12_RTP_56.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_vibrator_remain_12_RTP_56.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_vibrator_remain_12_RTP_56_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_vibrator_remain_12_RTP_56_165Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_vibrator_remain_12_RTP_56_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_vibrator_remain_12_RTP_56_175Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_vibrator_remain_12_RTP_56_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_vibrator_remain_12_RTP_56_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_vibrator_remain_12_RTP_56_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_vibrator_remain_12_RTP_56_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_vibrator_remain_12_RTP_56_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_vibrator_remain_12_RTP_56_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_vibrator_remain_12_RTP_56_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_vibrator_remain_12_RTP_56_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_voice_assistant_RTP_122.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_voice_assistant_RTP_122.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_voice_assistant_RTP_122_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_voice_assistant_RTP_122_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_voice_assistant_RTP_122_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_voice_assistant_RTP_122_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_voice_assistant_RTP_122_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_voice_assistant_RTP_122_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_voice_assistant_RTP_122_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_voice_assistant_RTP_122_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_voice_level_bar_edge_RTP_106.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_voice_level_bar_edge_RTP_106.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_voice_level_bar_edge_RTP_106_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_voice_level_bar_edge_RTP_106_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_voice_level_bar_edge_RTP_106_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_voice_level_bar_edge_RTP_106_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_voice_level_bar_edge_RTP_106_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_voice_level_bar_edge_RTP_106_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_voice_level_bar_edge_RTP_106_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_voice_level_bar_edge_RTP_106_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_waltz_channel_RTP_41.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_waltz_channel_RTP_41.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_waltz_channel_RTP_41_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_waltz_channel_RTP_41_165Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_waltz_channel_RTP_41_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_waltz_channel_RTP_41_175Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_waltz_channel_RTP_41_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_waltz_channel_RTP_41_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_waltz_channel_RTP_41_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_waltz_channel_RTP_41_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_waltz_channel_RTP_41_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_waltz_channel_RTP_41_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_waltz_channel_RTP_41_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_waltz_channel_RTP_41_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_weather_cloudy_RTP_oplusos7_143.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_cloudy_RTP_oplusos7_143.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_weather_cloudy_RTP_oplusos7_143_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_cloudy_RTP_oplusos7_143_165Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_weather_cloudy_RTP_oplusos7_143_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_cloudy_RTP_oplusos7_143_175Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_weather_cloudy_RTP_oplusos7_143_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_cloudy_RTP_oplusos7_143_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_weather_cloudy_RTP_oplusos7_143_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_cloudy_RTP_oplusos7_143_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_weather_cloudy_RTP_oplusos7_143_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_cloudy_RTP_oplusos7_143_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_weather_cloudy_RTP_oplusos7_143_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_cloudy_RTP_oplusos7_143_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_weather_default_RTP_oplusos7_145.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_default_RTP_oplusos7_145.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_weather_default_RTP_oplusos7_145_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_default_RTP_oplusos7_145_165Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_weather_default_RTP_oplusos7_145_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_default_RTP_oplusos7_145_175Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_weather_default_RTP_oplusos7_145_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_default_RTP_oplusos7_145_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_weather_default_RTP_oplusos7_145_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_default_RTP_oplusos7_145_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_weather_default_RTP_oplusos7_145_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_default_RTP_oplusos7_145_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_weather_default_RTP_oplusos7_145_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_default_RTP_oplusos7_145_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_weather_rain_RTP_oplusos7_149.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_rain_RTP_oplusos7_149.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_weather_rain_RTP_oplusos7_149_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_rain_RTP_oplusos7_149_165Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_weather_rain_RTP_oplusos7_149_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_rain_RTP_oplusos7_149_175Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_weather_rain_RTP_oplusos7_149_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_rain_RTP_oplusos7_149_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_weather_rain_RTP_oplusos7_149_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_rain_RTP_oplusos7_149_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_weather_rain_RTP_oplusos7_149_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_rain_RTP_oplusos7_149_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_weather_rain_RTP_oplusos7_149_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_rain_RTP_oplusos7_149_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_weather_smog_RTP_oplusos7_147.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_smog_RTP_oplusos7_147.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_weather_smog_RTP_oplusos7_147_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_smog_RTP_oplusos7_147_165Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_weather_smog_RTP_oplusos7_147_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_smog_RTP_oplusos7_147_175Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_weather_smog_RTP_oplusos7_147_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_smog_RTP_oplusos7_147_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_weather_smog_RTP_oplusos7_147_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_smog_RTP_oplusos7_147_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_weather_smog_RTP_oplusos7_147_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_smog_RTP_oplusos7_147_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_weather_smog_RTP_oplusos7_147_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_smog_RTP_oplusos7_147_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_weather_snow_RTP_oplusos7_148.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_snow_RTP_oplusos7_148.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_weather_snow_RTP_oplusos7_148_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_snow_RTP_oplusos7_148_165Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_weather_snow_RTP_oplusos7_148_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_snow_RTP_oplusos7_148_175Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_weather_snow_RTP_oplusos7_148_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_snow_RTP_oplusos7_148_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_weather_snow_RTP_oplusos7_148_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_snow_RTP_oplusos7_148_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_weather_snow_RTP_oplusos7_148_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_snow_RTP_oplusos7_148_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_weather_snow_RTP_oplusos7_148_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_snow_RTP_oplusos7_148_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_weather_sunny_RTP_oplusos7_146.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_sunny_RTP_oplusos7_146.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_weather_sunny_RTP_oplusos7_146_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_sunny_RTP_oplusos7_146_165Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_weather_sunny_RTP_oplusos7_146_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_sunny_RTP_oplusos7_146_175Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_weather_sunny_RTP_oplusos7_146_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_sunny_RTP_oplusos7_146_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_weather_sunny_RTP_oplusos7_146_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_sunny_RTP_oplusos7_146_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_weather_sunny_RTP_oplusos7_146_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_sunny_RTP_oplusos7_146_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_weather_sunny_RTP_oplusos7_146_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_sunny_RTP_oplusos7_146_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_weather_thunderstorm_RTP_oplusos7_144.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_thunderstorm_RTP_oplusos7_144.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_weather_thunderstorm_RTP_oplusos7_144_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_thunderstorm_RTP_oplusos7_144_165Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_weather_thunderstorm_RTP_oplusos7_144_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_thunderstorm_RTP_oplusos7_144_175Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_weather_thunderstorm_RTP_oplusos7_144_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_thunderstorm_RTP_oplusos7_144_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_weather_thunderstorm_RTP_oplusos7_144_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_thunderstorm_RTP_oplusos7_144_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_weather_thunderstorm_RTP_oplusos7_144_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_thunderstorm_RTP_oplusos7_144_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_weather_thunderstorm_RTP_oplusos7_144_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_thunderstorm_RTP_oplusos7_144_237Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_weather_wind_RTP_oplusos7_142.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_wind_RTP_oplusos7_142.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_weather_wind_RTP_oplusos7_142_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_wind_RTP_oplusos7_142_165Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_weather_wind_RTP_oplusos7_142_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_wind_RTP_oplusos7_142_175Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_weather_wind_RTP_oplusos7_142_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_wind_RTP_oplusos7_142_226Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_weather_wind_RTP_oplusos7_142_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_wind_RTP_oplusos7_142_230Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_weather_wind_RTP_oplusos7_142_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_wind_RTP_oplusos7_142_234Hz.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/aw8697_weather_wind_RTP_oplusos7_142_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_wind_RTP_oplusos7_142_237Hz.bin \
+    vendor/realme/RMX3371/proprietary/odm/firmware/awinic_haptic_gun_params.bin:$(TARGET_COPY_OUT_ODM)/firmware/awinic_haptic_gun_params.bin \
+    vendor/realme/RMX3371/proprietary/odm/firmware/awinic_haptic_params.bin:$(TARGET_COPY_OUT_ODM)/firmware/awinic_haptic_params.bin \
     vendor/realme/RMX3371/proprietary/odm/firmware/barca_alarm_ring_RTP_120.bin:$(TARGET_COPY_OUT_ODM)/firmware/barca_alarm_ring_RTP_120.bin \
     vendor/realme/RMX3371/proprietary/odm/firmware/barca_incoming_ring_RTP_121.bin:$(TARGET_COPY_OUT_ODM)/firmware/barca_incoming_ring_RTP_121.bin \
     vendor/realme/RMX3371/proprietary/odm/firmware/barca_notice_ring_RTP_122.bin:$(TARGET_COPY_OUT_ODM)/firmware/barca_notice_ring_RTP_122.bin \
@@ -1048,74 +598,12 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX3371/proprietary/odm/firmware/fastchg/21733/oplus_vooc_fw_rk826.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/21733/oplus_vooc_fw_rk826.bin \
     vendor/realme/RMX3371/proprietary/odm/firmware/fastchg/charging_thermal_config_default.txt:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/charging_thermal_config_default.txt \
     vendor/realme/RMX3371/proprietary/odm/firmware/fastchg/smart_chg_config_table.txt:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/smart_chg_config_table.txt \
-    vendor/realme/RMX3371/proprietary/odm/firmware/notif_Allay_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/notif_Allay_RTP.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/notif_Allusion_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/notif_Allusion_RTP.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/notif_Amiable_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/notif_Amiable_RTP.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/notif_Blare_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/notif_Blare_RTP.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/notif_Blissful_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/notif_Blissful_RTP.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/notif_Brisk_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/notif_Brisk_RTP.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/notif_Bubble_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/notif_Bubble_RTP.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/notif_Cheerful_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/notif_Cheerful_RTP.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/notif_Clear_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/notif_Clear_RTP.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/notif_Comely_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/notif_Comely_RTP.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/notif_Cozy_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/notif_Cozy_RTP.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/notif_Ding_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/notif_Ding_RTP.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/notif_Effervesce_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/notif_Effervesce_RTP.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/notif_Elegant_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/notif_Elegant_RTP.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/notif_Free_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/notif_Free_RTP.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/notif_Hallucination_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/notif_Hallucination_RTP.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/notif_Inbound_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/notif_Inbound_RTP.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/notif_Light_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/notif_Light_RTP.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/notif_Meet_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/notif_Meet_RTP.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/notif_Naivety_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/notif_Naivety_RTP.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/notif_Quickly_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/notif_Quickly_RTP.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/notif_Rhythm_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/notif_Rhythm_RTP.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/notif_Surprise_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/notif_Surprise_RTP.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/notif_Twinkle_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/notif_Twinkle_RTP.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/ring_Amenity_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ring_Amenity_RTP.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/ring_Bounce_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ring_Bounce_RTP.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/ring_Calm_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ring_Calm_RTP.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/ring_Lazy_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ring_Lazy_RTP.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/ring_Mystical_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ring_Mystical_RTP.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/ring_Whirl_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ring_Whirl_RTP.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/ringtone_Alacrity_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Alacrity_RTP.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/ringtone_Blues_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Blues_RTP.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/ringtone_Cloud_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Cloud_RTP.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/ringtone_Cyclotron_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Cyclotron_RTP.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/ringtone_Distinct_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Distinct_RTP.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/ringtone_Dynamic_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Dynamic_RTP.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/ringtone_Echo_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Echo_RTP.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/ringtone_Expect_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Expect_RTP.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/ringtone_Fanatical_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Fanatical_RTP.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/ringtone_Funky_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Funky_RTP.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/ringtone_Guitar_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Guitar_RTP.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/ringtone_Harping_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Harping_RTP.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/ringtone_Highlight_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Highlight_RTP.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/ringtone_Idyl_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Idyl_RTP.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/ringtone_Innocence_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Innocence_RTP.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/ringtone_Jazz_life_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Jazz_life_RTP.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/ringtone_Journey_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Journey_RTP.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/ringtone_Joyous_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Joyous_RTP.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/ringtone_Marimba_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Marimba_RTP.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/ringtone_Old_telephone_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Old_telephone_RTP.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/ringtone_OnePlus_tune_rhythm_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_OnePlus_tune_rhythm_RTP.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/ringtone_Oneplus_tune_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Oneplus_tune_RTP.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/ringtone_Optimistic_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Optimistic_RTP.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/ringtone_Piano_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Piano_RTP.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/ringtone_Rhythm_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Rhythm_RTP.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/ringtone_Sun_glittering_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Sun_glittering_RTP.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/shuntai24k_rtp.bin:$(TARGET_COPY_OUT_ODM)/firmware/shuntai24k_rtp.bin \
-    vendor/realme/RMX3371/proprietary/odm/firmware/t-jingle_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/t-jingle_RTP.bin \
-    vendor/realme/RMX3371/proprietary/odm/etc/wifi/regdb.bin:$(TARGET_COPY_OUT_ODM)/etc/wifi/regdb.bin \
-    vendor/realme/RMX3371/proprietary/odm/etc/wifi/regdb_version:$(TARGET_COPY_OUT_ODM)/etc/wifi/regdb_version \
     vendor/realme/RMX3371/proprietary/odm/firmware/tfa98xx.cnt:$(TARGET_COPY_OUT_ODM)/firmware/tfa98xx.cnt \
     vendor/realme/RMX3371/proprietary/odm/firmware/tp/21623/FW_FT3658U_SAMSUNG.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/21623/FW_FT3658U_SAMSUNG.img \
     vendor/realme/RMX3371/proprietary/odm/firmware/tp/21623/FW_FT3658U_SAMSUNG_FAE.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/21623/FW_FT3658U_SAMSUNG_FAE.img \
     vendor/realme/RMX3371/proprietary/odm/firmware/tp/21623/LIMIT_FT3658U_SAMSUNG.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/21623/LIMIT_FT3658U_SAMSUNG.img \
     vendor/realme/RMX3371/proprietary/odm/lib/libDeVIS.so:$(TARGET_COPY_OUT_ODM)/lib/libDeVIS.so \
-    vendor/realme/RMX3371/proprietary/odm/lib/libaiboost_sr.so:$(TARGET_COPY_OUT_ODM)/lib/libaiboost_sr.so \
     vendor/realme/RMX3371/proprietary/odm/lib/libc++_shared.so:$(TARGET_COPY_OUT_ODM)/lib/libc++_shared.so \
-    vendor/realme/RMX3371/proprietary/odm/lib/libosie_process.so:$(TARGET_COPY_OUT_ODM)/lib/libosie_process.so \
     vendor/realme/RMX3371/proprietary/vendor/lib/libsn100u_fw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsn100u_fw.so \
     vendor/realme/RMX3371/proprietary/odm/lib/rfsa/adsp/hta_lib/libhta_dsp_skel.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/hta_lib/libhta_dsp_skel.so \
     vendor/realme/RMX3371/proprietary/odm/lib/rfsa/adsp/libaiboost_skel.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/libaiboost_skel.so \
@@ -1166,11 +654,10 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX3371/proprietary/odm/lib64/hw/fingerprint.goodix_G6.default.so:$(TARGET_COPY_OUT_ODM)/lib64/hw/fingerprint.goodix_G6.default.so \
     vendor/realme/RMX3371/proprietary/odm/lib64/hw/fingerprint.goodix_G7.default.so:$(TARGET_COPY_OUT_ODM)/lib64/hw/fingerprint.goodix_G7.default.so \
     vendor/realme/RMX3371/proprietary/odm/lib64/hw/vendor.qti.esepowermanager@1.1-impl.so:$(TARGET_COPY_OUT_ODM)/lib64/hw/vendor.qti.esepowermanager@1.1-impl.so \
+    vendor/realme/RMX3371/proprietary/odm/lib64/lib-virtual-modem-protos.so:$(TARGET_COPY_OUT_ODM)/lib64/lib-virtual-modem-protos.so \
     vendor/realme/RMX3371/proprietary/odm/lib64/lib2DSlender.so:$(TARGET_COPY_OUT_ODM)/lib64/lib2DSlender.so \
-    vendor/realme/RMX3371/proprietary/odm/lib64/libvl53l1_daemon.so:$(TARGET_COPY_OUT_ODM)/lib64/libvl53l1_daemon.so \
-    vendor/realme/RMX3371/proprietary/odm/lib64/sensors.hal.tof.so:$(TARGET_COPY_OUT_ODM)/lib64/sensors.hal.tof.so \
-    vendor/realme/RMX3371/proprietary/odm/lib64/libAlgoProcess.so:$(TARGET_COPY_OUT_ODM)/lib64/libAlgoProcess.so \
     vendor/realme/RMX3371/proprietary/odm/lib64/libAlgoInterface.so:$(TARGET_COPY_OUT_ODM)/lib64/libAlgoInterface.so \
+    vendor/realme/RMX3371/proprietary/odm/lib64/libAlgoProcess.so:$(TARGET_COPY_OUT_ODM)/lib64/libAlgoProcess.so \
     vendor/realme/RMX3371/proprietary/odm/lib64/libAncFilter.so:$(TARGET_COPY_OUT_ODM)/lib64/libAncFilter.so \
     vendor/realme/RMX3371/proprietary/odm/lib64/libAncHumBokeh.so:$(TARGET_COPY_OUT_ODM)/lib64/libAncHumBokeh.so \
     vendor/realme/RMX3371/proprietary/odm/lib64/libAncHumBokehPost.so:$(TARGET_COPY_OUT_ODM)/lib64/libAncHumBokehPost.so \
@@ -1181,23 +668,29 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX3371/proprietary/odm/lib64/libAncSegBaseSdk.so:$(TARGET_COPY_OUT_ODM)/lib64/libAncSegBaseSdk.so \
     vendor/realme/RMX3371/proprietary/odm/lib64/libAncSegmentSdk.so:$(TARGET_COPY_OUT_ODM)/lib64/libAncSegmentSdk.so \
     vendor/realme/RMX3371/proprietary/odm/lib64/libBokehPre.so:$(TARGET_COPY_OUT_ODM)/lib64/libBokehPre.so \
+    vendor/realme/RMX3371/proprietary/odm/lib64/libCOppLceTonemapAPI.so:$(TARGET_COPY_OUT_ODM)/lib64/libCOppLceTonemapAPI.so \
     vendor/realme/RMX3371/proprietary/odm/lib64/libCaptureBokeh.so:$(TARGET_COPY_OUT_ODM)/lib64/libCaptureBokeh.so \
     vendor/realme/RMX3371/proprietary/odm/lib64/libDeVIS.so:$(TARGET_COPY_OUT_ODM)/lib64/libDeVIS.so \
     vendor/realme/RMX3371/proprietary/odm/lib64/libEIS.so:$(TARGET_COPY_OUT_ODM)/lib64/libEIS.so \
     vendor/realme/RMX3371/proprietary/odm/lib64/libFDClite.so:$(TARGET_COPY_OUT_ODM)/lib64/libFDClite.so \
     vendor/realme/RMX3371/proprietary/odm/lib64/libFaceBeautyCap.so:$(TARGET_COPY_OUT_ODM)/lib64/libFaceBeautyCap.so \
+    vendor/realme/RMX3371/proprietary/odm/lib64/libFaceBeautyJni.so:$(TARGET_COPY_OUT_ODM)/lib64/libFaceBeautyJni.so \
     vendor/realme/RMX3371/proprietary/odm/lib64/libFaceBeautyPICap.so:$(TARGET_COPY_OUT_ODM)/lib64/libFaceBeautyPICap.so \
     vendor/realme/RMX3371/proprietary/odm/lib64/libFaceBeautyPre.so:$(TARGET_COPY_OUT_ODM)/lib64/libFaceBeautyPre.so \
+    vendor/realme/RMX3371/proprietary/odm/lib64/libFaceDistortionCorrection.so:$(TARGET_COPY_OUT_ODM)/lib64/libFaceDistortionCorrection.so \
     vendor/realme/RMX3371/proprietary/odm/lib64/libFaceWhiten.so:$(TARGET_COPY_OUT_ODM)/lib64/libFaceWhiten.so \
     vendor/realme/RMX3371/proprietary/odm/lib64/libFilterWrapper.so:$(TARGET_COPY_OUT_ODM)/lib64/libFilterWrapper.so \
     vendor/realme/RMX3371/proprietary/odm/lib64/libHdrVideo.so:$(TARGET_COPY_OUT_ODM)/lib64/libHdrVideo.so \
+    vendor/realme/RMX3371/proprietary/odm/lib64/libImageWarpMask.so:$(TARGET_COPY_OUT_ODM)/lib64/libImageWarpMask.so \
     vendor/realme/RMX3371/proprietary/odm/lib64/libNightVideo.so:$(TARGET_COPY_OUT_ODM)/lib64/libNightVideo.so \
     vendor/realme/RMX3371/proprietary/odm/lib64/libOGLManager.so:$(TARGET_COPY_OUT_ODM)/lib64/libOGLManager.so \
     vendor/realme/RMX3371/proprietary/odm/lib64/libOPLUS_SCPortrait.so:$(TARGET_COPY_OUT_ODM)/lib64/libOPLUS_SCPortrait.so \
+    vendor/realme/RMX3371/proprietary/odm/lib64/libPerfectColor.so:$(TARGET_COPY_OUT_ODM)/lib64/libPerfectColor.so \
     vendor/realme/RMX3371/proprietary/odm/lib64/libPerfectlyClearCrux.so:$(TARGET_COPY_OUT_ODM)/lib64/libPerfectlyClearCrux.so \
     vendor/realme/RMX3371/proprietary/odm/lib64/libPerfectlyClearCruxOpt.so:$(TARGET_COPY_OUT_ODM)/lib64/libPerfectlyClearCruxOpt.so \
     vendor/realme/RMX3371/proprietary/odm/lib64/libPlatformValidatorShared.so:$(TARGET_COPY_OUT_ODM)/lib64/libPlatformValidatorShared.so \
     vendor/realme/RMX3371/proprietary/odm/lib64/libPolarrRender.so:$(TARGET_COPY_OUT_ODM)/lib64/libPolarrRender.so \
+    vendor/realme/RMX3371/proprietary/odm/lib64/libPreviewDecisionOld.so:$(TARGET_COPY_OUT_ODM)/lib64/libPreviewDecisionOld.so \
     vendor/realme/RMX3371/proprietary/odm/lib64/libQnnHtpAltPrepStub.so:$(TARGET_COPY_OUT_ODM)/lib64/libQnnHtpAltPrepStub.so \
     vendor/realme/RMX3371/proprietary/odm/lib64/libQnnHtpStub.so:$(TARGET_COPY_OUT_ODM)/lib64/libQnnHtpStub.so \
     vendor/realme/RMX3371/proprietary/odm/lib64/libRedeyeReduce.so:$(TARGET_COPY_OUT_ODM)/lib64/libRedeyeReduce.so \
@@ -1216,9 +709,11 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX3371/proprietary/odm/lib64/libVDPostureDetection.so:$(TARGET_COPY_OUT_ODM)/lib64/libVDPostureDetection.so \
     vendor/realme/RMX3371/proprietary/odm/lib64/libVDSuperPhotoAPI.so:$(TARGET_COPY_OUT_ODM)/lib64/libVDSuperPhotoAPI.so \
     vendor/realme/RMX3371/proprietary/odm/lib64/libVDUpScale.so:$(TARGET_COPY_OUT_ODM)/lib64/libVDUpScale.so \
+    vendor/realme/RMX3371/proprietary/odm/lib64/libVideoEnhance.so:$(TARGET_COPY_OUT_ODM)/lib64/libVideoEnhance.so \
     vendor/realme/RMX3371/proprietary/odm/lib64/libWaterMark.so:$(TARGET_COPY_OUT_ODM)/lib64/libWaterMark.so \
     vendor/realme/RMX3371/proprietary/odm/lib64/libWaterMode.so:$(TARGET_COPY_OUT_ODM)/lib64/libWaterMode.so \
     vendor/realme/RMX3371/proprietary/odm/lib64/libXDocProcessSDK.so:$(TARGET_COPY_OUT_ODM)/lib64/libXDocProcessSDK.so \
+    vendor/realme/RMX3371/proprietary/odm/lib64/libYTCommon.so:$(TARGET_COPY_OUT_ODM)/lib64/libYTCommon.so \
     vendor/realme/RMX3371/proprietary/odm/lib64/lib_rectify.so:$(TARGET_COPY_OUT_ODM)/lib64/lib_rectify.so \
     vendor/realme/RMX3371/proprietary/odm/lib64/libaiboost.so:$(TARGET_COPY_OUT_ODM)/lib64/libaiboost.so \
     vendor/realme/RMX3371/proprietary/odm/lib64/libaiboost_hexagon.so:$(TARGET_COPY_OUT_ODM)/lib64/libaiboost_hexagon.so \
@@ -1226,6 +721,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX3371/proprietary/odm/lib64/libaiboost_sr.so:$(TARGET_COPY_OUT_ODM)/lib64/libaiboost_sr.so \
     vendor/realme/RMX3371/proprietary/odm/lib64/libaiboost_ubwc.so:$(TARGET_COPY_OUT_ODM)/lib64/libaiboost_ubwc.so \
     vendor/realme/RMX3371/proprietary/odm/lib64/libaisal.so:$(TARGET_COPY_OUT_ODM)/lib64/libaisal.so \
+    vendor/realme/RMX3371/proprietary/odm/lib64/libaisd.so:$(TARGET_COPY_OUT_ODM)/lib64/libaisd.so \
     vendor/realme/RMX3371/proprietary/odm/lib64/libaiseg.so:$(TARGET_COPY_OUT_ODM)/lib64/libaiseg.so \
     vendor/realme/RMX3371/proprietary/odm/lib64/libalCFR.so:$(TARGET_COPY_OUT_ODM)/lib64/libalCFR.so \
     vendor/realme/RMX3371/proprietary/odm/lib64/libancbase_rt_bokeh.so:$(TARGET_COPY_OUT_ODM)/lib64/libancbase_rt_bokeh.so \
@@ -1237,6 +733,9 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX3371/proprietary/odm/lib64/libapsdarksight.so:$(TARGET_COPY_OUT_ODM)/lib64/libapsdarksight.so \
     vendor/realme/RMX3371/proprietary/odm/lib64/libapsexif.so:$(TARGET_COPY_OUT_ODM)/lib64/libapsexif.so \
     vendor/realme/RMX3371/proprietary/odm/lib64/libapsjpeg.so:$(TARGET_COPY_OUT_ODM)/lib64/libapsjpeg.so \
+    vendor/realme/RMX3371/proprietary/odm/lib64/libapspng.so:$(TARGET_COPY_OUT_ODM)/lib64/libapspng.so \
+    vendor/realme/RMX3371/proprietary/odm/lib64/libarcsoft_aicolor_image.so:$(TARGET_COPY_OUT_ODM)/lib64/libarcsoft_aicolor_image.so \
+    vendor/realme/RMX3371/proprietary/odm/lib64/libarcsoft_aicolor_video.so:$(TARGET_COPY_OUT_ODM)/lib64/libarcsoft_aicolor_video.so \
     vendor/realme/RMX3371/proprietary/odm/lib64/libarcsoft_distortion_correction.so:$(TARGET_COPY_OUT_ODM)/lib64/libarcsoft_distortion_correction.so \
     vendor/realme/RMX3371/proprietary/odm/lib64/libarcsoft_dualcam_bokeh_api.so:$(TARGET_COPY_OUT_ODM)/lib64/libarcsoft_dualcam_bokeh_api.so \
     vendor/realme/RMX3371/proprietary/odm/lib64/libarcsoft_dualcam_refocus_left.so:$(TARGET_COPY_OUT_ODM)/lib64/libarcsoft_dualcam_refocus_left.so \
@@ -1274,8 +773,14 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX3371/proprietary/odm/lib64/libcdm_metrics_protos.so:$(TARGET_COPY_OUT_ODM)/lib64/libcdm_metrics_protos.so \
     vendor/realme/RMX3371/proprietary/odm/lib64/libcdm_protos.so:$(TARGET_COPY_OUT_ODM)/lib64/libcdm_protos.so \
     vendor/realme/RMX3371/proprietary/odm/lib64/libcom.oplus.calidatacontainer.so:$(TARGET_COPY_OUT_ODM)/lib64/libcom.oplus.calidatacontainer.so \
+    vendor/realme/RMX3371/proprietary/odm/lib64/libcommcenterfw.so:$(TARGET_COPY_OUT_ODM)/lib64/libcommcenterfw.so \
+    vendor/realme/RMX3371/proprietary/odm/lib64/libcommcenterutils.so:$(TARGET_COPY_OUT_ODM)/lib64/libcommcenterutils.so \
     vendor/realme/RMX3371/proprietary/odm/lib64/libcvface_api.so:$(TARGET_COPY_OUT_ODM)/lib64/libcvface_api.so \
     vendor/realme/RMX3371/proprietary/odm/lib64/libdav1d.so.4:$(TARGET_COPY_OUT_ODM)/lib64/libdav1d.so.4 \
+    vendor/realme/RMX3371/proprietary/odm/lib64/libdmtp-protos-lite.so:$(TARGET_COPY_OUT_ODM)/lib64/libdmtp-protos-lite.so \
+    vendor/realme/RMX3371/proprietary/odm/lib64/libdmtp.so:$(TARGET_COPY_OUT_ODM)/lib64/libdmtp.so \
+    vendor/realme/RMX3371/proprietary/odm/lib64/libdmtpclient.so:$(TARGET_COPY_OUT_ODM)/lib64/libdmtpclient.so \
+    vendor/realme/RMX3371/proprietary/odm/lib64/libeffect_custom.so:$(TARGET_COPY_OUT_ODM)/lib64/libeffect_custom.so \
     vendor/realme/RMX3371/proprietary/odm/lib64/libfastov_dsp.so:$(TARGET_COPY_OUT_ODM)/lib64/libfastov_dsp.so \
     vendor/realme/RMX3371/proprietary/odm/lib64/libgf_hal_G2.so:$(TARGET_COPY_OUT_ODM)/lib64/libgf_hal_G2.so \
     vendor/realme/RMX3371/proprietary/odm/lib64/libgf_hal_G3.so:$(TARGET_COPY_OUT_ODM)/lib64/libgf_hal_G3.so \
@@ -1294,9 +799,11 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX3371/proprietary/odm/lib64/libop-ai-beauty-faceretouch-cn.so:$(TARGET_COPY_OUT_ODM)/lib64/libop-ai-beauty-faceretouch-cn.so \
     vendor/realme/RMX3371/proprietary/odm/lib64/liboplus_service.so:$(TARGET_COPY_OUT_ODM)/lib64/liboplus_service.so \
     vendor/realme/RMX3371/proprietary/odm/lib64/libormshalclient.so:$(TARGET_COPY_OUT_ODM)/lib64/libormshalclient.so \
+    vendor/realme/RMX3371/proprietary/odm/lib64/libosenseaidlhalclient.so:$(TARGET_COPY_OUT_ODM)/lib64/libosenseaidlhalclient.so \
     vendor/realme/RMX3371/proprietary/odm/lib64/libosensehalclient.so:$(TARGET_COPY_OUT_ODM)/lib64/libosensehalclient.so \
     vendor/realme/RMX3371/proprietary/odm/lib64/libosie_process.so:$(TARGET_COPY_OUT_ODM)/lib64/libosie_process.so \
     vendor/realme/RMX3371/proprietary/odm/lib64/libosie_stub.so:$(TARGET_COPY_OUT_ODM)/lib64/libosie_stub.so \
+    vendor/realme/RMX3371/proprietary/odm/lib64/libpngwrapper.so:$(TARGET_COPY_OUT_ODM)/lib64/libpngwrapper.so \
     vendor/realme/RMX3371/proprietary/odm/lib64/libpwirisfeature.so:$(TARGET_COPY_OUT_ODM)/lib64/libpwirisfeature.so \
     vendor/realme/RMX3371/proprietary/odm/lib64/libpwirishalwrapper.so:$(TARGET_COPY_OUT_ODM)/lib64/libpwirishalwrapper.so \
     vendor/realme/RMX3371/proprietary/odm/lib64/libshdr_stub.so:$(TARGET_COPY_OUT_ODM)/lib64/libshdr_stub.so \
@@ -1305,21 +812,31 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX3371/proprietary/odm/lib64/libsnpe_htp.so:$(TARGET_COPY_OUT_ODM)/lib64/libsnpe_htp.so \
     vendor/realme/RMX3371/proprietary/odm/lib64/libsnpe_loader.so:$(TARGET_COPY_OUT_ODM)/lib64/libsnpe_loader.so \
     vendor/realme/RMX3371/proprietary/odm/lib64/libsnpeml.so:$(TARGET_COPY_OUT_ODM)/lib64/libsnpeml.so \
+    vendor/realme/RMX3371/proprietary/odm/lib64/libstblur_api.so:$(TARGET_COPY_OUT_ODM)/lib64/libstblur_api.so \
+    vendor/realme/RMX3371/proprietary/odm/lib64/libstblur_capture_api.so:$(TARGET_COPY_OUT_ODM)/lib64/libstblur_capture_api.so \
     vendor/realme/RMX3371/proprietary/odm/lib64/libstdc++.so:$(TARGET_COPY_OUT_ODM)/lib64/libstdc++.so \
+    vendor/realme/RMX3371/proprietary/odm/lib64/libstface_fd_api.so:$(TARGET_COPY_OUT_ODM)/lib64/libstface_fd_api.so \
     vendor/realme/RMX3371/proprietary/odm/lib64/libstfaceunlockocl.so:$(TARGET_COPY_OUT_ODM)/lib64/libstfaceunlockocl.so \
+    vendor/realme/RMX3371/proprietary/odm/lib64/libstfd_mobile_api.so:$(TARGET_COPY_OUT_ODM)/lib64/libstfd_mobile_api.so \
     vendor/realme/RMX3371/proprietary/odm/lib64/libsymphony-cpu.so:$(TARGET_COPY_OUT_ODM)/lib64/libsymphony-cpu.so \
     vendor/realme/RMX3371/proprietary/odm/lib64/libsymphonypower.so:$(TARGET_COPY_OUT_ODM)/lib64/libsymphonypower.so \
+    vendor/realme/RMX3371/proprietary/odm/lib64/libvl53l1_daemon.so:$(TARGET_COPY_OUT_ODM)/lib64/libvl53l1_daemon.so \
     vendor/realme/RMX3371/proprietary/odm/lib64/libwatermark_photo.so:$(TARGET_COPY_OUT_ODM)/lib64/libwatermark_photo.so \
     vendor/realme/RMX3371/proprietary/odm/lib64/libwvhidl.so:$(TARGET_COPY_OUT_ODM)/lib64/libwvhidl.so \
     vendor/realme/RMX3371/proprietary/odm/lib64/mediadrm/libwvdrmengine.so:$(TARGET_COPY_OUT_ODM)/lib64/mediadrm/libwvdrmengine.so \
+    vendor/realme/RMX3371/proprietary/odm/lib64/sensors.hal.tof.so:$(TARGET_COPY_OUT_ODM)/lib64/sensors.hal.tof.so \
     vendor/realme/RMX3371/proprietary/odm/lib64/vendor.oplus.hardware.appradio@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.appradio@1.0.so \
-    vendor/realme/RMX3371/proprietary/odm/lib64/vendor.oplus.hardware.cameraextension@1.0-service-impl.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.cameraextension@1.0-service-impl.so \
-    vendor/realme/RMX3371/proprietary/odm/lib64/vendor.oplus.hardware.cammidasservice@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.cammidasservice@1.0.so \
+    vendor/realme/RMX3371/proprietary/odm/lib64/vendor.oplus.hardware.biometrics.fingerprint@2.1.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.biometrics.fingerprint@2.1.so \
+    vendor/realme/RMX3371/proprietary/odm/lib64/vendor.oplus.hardware.cameraextension-V1-service-impl.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.cameraextension-V1-service-impl.so \
+    vendor/realme/RMX3371/proprietary/odm/lib64/vendor.oplus.hardware.cammidasservice-V1-ndk_platform.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.cammidasservice-V1-ndk_platform.so \
     vendor/realme/RMX3371/proprietary/odm/lib64/vendor.oplus.hardware.commondcs@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.commondcs@1.0.so \
+    vendor/realme/RMX3371/proprietary/odm/lib64/vendor.oplus.hardware.communicationcenter_compat@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.communicationcenter_compat@1.0.so \
     vendor/realme/RMX3371/proprietary/odm/lib64/vendor.oplus.hardware.ims@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.ims@1.0.so \
     vendor/realme/RMX3371/proprietary/odm/lib64/vendor.oplus.hardware.oplusSensor@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.oplusSensor@1.0.so \
     vendor/realme/RMX3371/proprietary/odm/lib64/vendor.oplus.hardware.orms@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.orms@1.0.so \
+    vendor/realme/RMX3371/proprietary/odm/lib64/vendor.oplus.hardware.osense.client-V1-ndk_platform.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.osense.client-V1-ndk_platform.so \
     vendor/realme/RMX3371/proprietary/odm/lib64/vendor.oplus.hardware.osense.client@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.osense.client@1.0.so \
+    vendor/realme/RMX3371/proprietary/odm/lib64/vendor.oplus.hardware.performance-V1-ndk_platform.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.performance-V1-ndk_platform.so \
     vendor/realme/RMX3371/proprietary/odm/lib64/vendor.oplus.hardware.performance@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.performance@1.0.so \
     vendor/realme/RMX3371/proprietary/odm/lib64/vendor.oplus.hardware.radio@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.radio@1.0.so \
     vendor/realme/RMX3371/proprietary/odm/lib64/vendor.pixelworks.hardware.display@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.pixelworks.hardware.display@1.0.so \
@@ -1424,7 +941,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX3371/proprietary/system_ext/lib64/vendor.qti.diaghal@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.diaghal@1.0.so \
     vendor/realme/RMX3371/proprietary/system_ext/lib64/vendor.qti.hardware.dpmservice@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.dpmservice@1.0.so \
     vendor/realme/RMX3371/proprietary/system_ext/lib64/vendor.qti.imsrtpservice@3.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.imsrtpservice@3.0.so \
-    vendor/realme/RMX3371/proprietary/system_ext/lib64/vendor.qti.imsrtpservice@3.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.imsrtpservice@3.1.so \
     vendor/realme/RMX3371/proprietary/vendor/bin/ATFWD-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/ATFWD-daemon \
     vendor/realme/RMX3371/proprietary/vendor/bin/adpl:$(TARGET_COPY_OUT_VENDOR)/bin/adpl \
     vendor/realme/RMX3371/proprietary/vendor/bin/adsprpcd:$(TARGET_COPY_OUT_VENDOR)/bin/adsprpcd \
@@ -1492,7 +1008,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX3371/proprietary/vendor/bin/xtwifi-inet-agent:$(TARGET_COPY_OUT_VENDOR)/bin/xtwifi-inet-agent \
     vendor/realme/RMX3371/proprietary/vendor/etc/ArmHDCP_QTI_Android.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/ArmHDCP_QTI_Android.cfg \
     vendor/realme/RMX3371/proprietary/vendor/etc/OPlus_QC_LTM_Commercial_SM8250_2020_02_07.pfm:$(TARGET_COPY_OUT_VENDOR)/etc/OPlus_QC_LTM_Commercial_SM8250_2020_02_07.pfm \
-    vendor/realme/RMX3371/proprietary/vendor/etc/Oppo_QC_LTM_Commercial_2020_01_03.pfm:$(TARGET_COPY_OUT_VENDOR)/etc/Oppo_QC_LTM_Commercial_2020_01_03.pfm \
+    vendor/realme/RMX3371/proprietary/vendor/etc/Oppo_QC_LTM_Commercial_SM8250_2020_01_15.pfm:$(TARGET_COPY_OUT_VENDOR)/etc/Oppo_QC_LTM_Commercial_SM8250_2020_01_15.pfm \
     vendor/realme/RMX3371/proprietary/vendor/etc/acdbdata/adsp_avs_config.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/adsp_avs_config.acdb \
     vendor/realme/RMX3371/proprietary/vendor/etc/apdr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/apdr.conf \
     vendor/realme/RMX3371/proprietary/vendor/etc/cacert_location.pem:$(TARGET_COPY_OUT_VENDOR)/etc/cacert_location.pem \
@@ -1585,21 +1101,14 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX3371/proprietary/vendor/etc/ltm_config_samsung_ams662zs01_dsc_cmd_21623.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ltm_config_samsung_ams662zs01_dsc_cmd_21623.xml \
     vendor/realme/RMX3371/proprietary/vendor/etc/ltm_config_samsung_ams662zs01_dsc_cmd_mode_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ltm_config_samsung_ams662zs01_dsc_cmd_mode_panel.xml \
     vendor/realme/RMX3371/proprietary/vendor/etc/ltm_config_samsung_ams662zs01_dvt_dsc_cmd_mode_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ltm_config_samsung_ams662zs01_dvt_dsc_cmd_mode_panel.xml \
-    vendor/realme/RMX3371/proprietary/vendor/etc/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
-    vendor/realme/RMX3371/proprietary/vendor/etc/media_codecs_kona.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_kona.xml \
-    vendor/realme/RMX3371/proprietary/vendor/etc/media_codecs_kona_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_kona_vendor.xml \
-    vendor/realme/RMX3371/proprietary/vendor/etc/media_codecs_performance_kona.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_kona.xml \
-    vendor/realme/RMX3371/proprietary/vendor/etc/media_codecs_performance_kona_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_kona_vendor.xml \
-    vendor/realme/RMX3371/proprietary/vendor/etc/media_codecs_vendor_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_vendor_audio.xml \
-    vendor/realme/RMX3371/proprietary/vendor/etc/media_profiles.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles.xml \
-    vendor/realme/RMX3371/proprietary/vendor/etc/media_profiles_kona.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_kona.xml \
-    vendor/realme/RMX3371/proprietary/vendor/etc/media_profiles_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_vendor.xml \
+    vendor/realme/RMX3371/proprietary/vendor/etc/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf \
     vendor/realme/RMX3371/proprietary/vendor/etc/perf/commonresourceconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/commonresourceconfigs.xml \
     vendor/realme/RMX3371/proprietary/vendor/etc/perf/perfboostsconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perfboostsconfig.xml \
     vendor/realme/RMX3371/proprietary/vendor/etc/perf/perfconfigstore.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perfconfigstore.xml \
     vendor/realme/RMX3371/proprietary/vendor/etc/perf/targetconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/targetconfig.xml \
     vendor/realme/RMX3371/proprietary/vendor/etc/perf/targetresourceconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/targetresourceconfigs.xml \
     vendor/realme/RMX3371/proprietary/vendor/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml \
+    vendor/realme/RMX3371/proprietary/vendor/etc/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml \
     vendor/realme/RMX3371/proprietary/vendor/etc/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt \
     vendor/realme/RMX3371/proprietary/vendor/etc/qdcm_calib_data_samsung_ams662zs01_dsc_cmd_21623.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_samsung_ams662zs01_dsc_cmd_21623.xml \
     vendor/realme/RMX3371/proprietary/vendor/etc/qdcm_calib_data_samsung_ams662zs01_dsc_cmd_mode_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_samsung_ams662zs01_dsc_cmd_mode_panel.xml \
@@ -2080,6 +1589,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX3371/proprietary/vendor/lib64/libgps.utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgps.utils.so \
     vendor/realme/RMX3371/proprietary/vendor/lib64/libgpudataproducer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgpudataproducer.so \
     vendor/realme/RMX3371/proprietary/vendor/lib64/libgsl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgsl.so \
+    vendor/realme/RMX3371/proprietary/vendor/lib64/libgui1_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgui1_vendor.so \
     vendor/realme/RMX3371/proprietary/vendor/lib64/libhdr_tm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdr_tm.so \
     vendor/realme/RMX3371/proprietary/vendor/lib64/libhexagon_nn_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhexagon_nn_stub.so \
     vendor/realme/RMX3371/proprietary/vendor/lib64/libhistogram.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhistogram.so \
@@ -2110,6 +1620,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX3371/proprietary/vendor/lib64/libmdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmdsprpc.so \
     vendor/realme/RMX3371/proprietary/vendor/lib64/libmeters.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmeters.so \
     vendor/realme/RMX3371/proprietary/vendor/lib64/libmidasserviceintf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmidasserviceintf.so \
+    vendor/realme/RMX3371/proprietary/vendor/lib64/libmidasserviceintf_aidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmidasserviceintf_aidl.so \
     vendor/realme/RMX3371/proprietary/vendor/lib64/libminkdescriptor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libminkdescriptor.so \
     vendor/realme/RMX3371/proprietary/vendor/lib64/libminksocket.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libminksocket.so \
     vendor/realme/RMX3371/proprietary/vendor/lib64/libmmcamera_faceproc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera_faceproc.so \
@@ -2140,7 +1651,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX3371/proprietary/vendor/lib64/libqcmaputils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcmaputils.so \
     vendor/realme/RMX3371/proprietary/vendor/lib64/libqcrilFramework.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcrilFramework.so \
     vendor/realme/RMX3371/proprietary/vendor/lib64/libqcrildatactl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcrildatactl.so \
-    vendor/realme/RMX3371/proprietary/vendor/lib64/libqdMetaData.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqdMetaData.so \
     vendor/realme/RMX3371/proprietary/vendor/lib64/libqdi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqdi.so \
     vendor/realme/RMX3371/proprietary/vendor/lib64/libqdma_file_agent.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqdma_file_agent.so \
     vendor/realme/RMX3371/proprietary/vendor/lib64/libqdp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqdp.so \
@@ -2234,8 +1744,10 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX3371/proprietary/vendor/lib64/vendor.display.color@1.4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.color@1.4.so \
     vendor/realme/RMX3371/proprietary/vendor/lib64/vendor.display.color@1.5.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.color@1.5.so \
     vendor/realme/RMX3371/proprietary/vendor/lib64/vendor.display.postproc@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.postproc@1.0.so \
-    vendor/realme/RMX3371/proprietary/vendor/lib64/vendor.oplus.hardware.cameraextension@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oplus.hardware.cameraextension@1.0.so \
+    vendor/realme/RMX3371/proprietary/vendor/lib64/vendor.oplus.hardware.cameraextension-V1-ndk_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oplus.hardware.cameraextension-V1-ndk_platform.so \
+    vendor/realme/RMX3371/proprietary/vendor/lib64/vendor.oplus.hardware.cammidasservice-V1-ndk_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oplus.hardware.cammidasservice-V1-ndk_platform.so \
     vendor/realme/RMX3371/proprietary/vendor/lib64/vendor.oplus.hardware.cammidasservice@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oplus.hardware.cammidasservice@1.0.so \
+    vendor/realme/RMX3371/proprietary/vendor/lib64/vendor.oplus.hardware.commondcs-V1-ndk_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oplus.hardware.commondcs-V1-ndk_platform.so \
     vendor/realme/RMX3371/proprietary/vendor/lib64/vendor.oplus.hardware.extcamera@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oplus.hardware.extcamera@1.0.so \
     vendor/realme/RMX3371/proprietary/vendor/lib64/vendor.qti.data.factory@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.data.factory@2.0.so \
     vendor/realme/RMX3371/proprietary/vendor/lib64/vendor.qti.data.factory@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.data.factory@2.1.so \
@@ -2361,5 +1873,4 @@ PRODUCT_PACKAGES += \
     vendor.qti.gnss@4.0-service \
     manifest_android.hardware.drm@1.3-service.widevine \
     manifest_oplusSensor \
-    manifest_oplus_cameraextension \
     manifest_oplus_fingerprint
